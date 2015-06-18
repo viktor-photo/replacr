@@ -1,0 +1,90 @@
+.after-login{
+	position: relative;
+
+	.widget{
+		position: relative;
+		padding: 20px 0 0;
+		height: 128px;
+		text-align: center;
+		font-size: $initial-size;
+		font-family: $main-font-family;
+
+		@include up-to-desktop{
+			padding-top: 25px;
+		}
+		
+		.inner{
+			padding: 0 10px;
+		}
+
+		.numbr{
+			font-size: 56px;
+			display: block;
+			text-align: center;
+			line-height: 1em;
+			font-weight: 300;
+			color: $color-green;
+			letter-spacing: -0.025em;
+
+			@include transition(all, 0.2s);
+
+			@include up-to-widescreen{
+				font-size: 48px;
+			}
+
+			@include up-to-desktop{
+				font-size: 42px;
+				margin-bottom: 5px;
+			}
+		}
+		.legend{
+			font-size: 14px;
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+
+			@include up-to-desktop{
+				font-size: 12px;
+			}
+		}
+
+		.view-more{
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			margin: 0;
+			height: 20px;
+			line-height: 22px;
+			text-align: left;
+			color: $color-white;
+			font-size: 11px;
+			font-family: $main-font-family;
+			text-transform: uppercase;
+			padding: 0 10px;
+
+			&:before{
+				font-family: replacr;
+				position: absolute;
+				right: 10px;
+				top: 0;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+		&.blue{
+			.view-more{
+				background: $color-blue;
+			}
+		}
+
+		&.green{
+			.view-more{
+				background: $color-green;
+			}
+		}
+	}
+}

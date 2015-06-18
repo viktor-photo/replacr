@@ -1,0 +1,104 @@
+.iframe-header{
+	height: 70px;
+	line-height: 70px;
+
+	@include up-to-smartphone{
+		line-height: 50px;
+	}
+
+	.logo{
+		height: 70px;
+		margin-right: 20px;
+
+		@include up-to-tablet{
+			margin-right: 0;
+		}
+
+		a{
+			width: 101px;
+			height: 70px;
+			display: block;
+			background: url('../img/logo-alt-2x.png') no-repeat center center;
+			background-size: 100% auto;
+			overflow: hidden;
+			text-indent: 100%;
+		}
+	}
+
+	.subheaders{
+		position: relative;
+
+		@include up-to-tablet{
+			display: block;
+			margin-top: 20px;
+		}
+
+		@include up-to-medium{
+			display: none;
+		}
+
+		span{
+			font-size: $initial-size;
+			font-family: $main-font-family;
+			line-height: 1rem;
+			display: inline-block;
+			margin-left: 1rem;
+			padding-left: 10px;
+			border-left: 1px solid $color-blue;
+
+			@include up-to-tablet{
+				display: table;
+			}
+		}
+	}
+
+	.button{
+		margin: 18px 0 0;
+
+		@include up-to-smartphone{
+			padding: 0 1.5rem;
+		}
+	}
+
+	.lang-select{
+
+		height: 70px;
+		line-height: 70px;
+		
+		@include up-to-smartphone{
+			margin-right: 25px;
+		}
+
+		.legend{
+			font-size: $initial-size;
+		}
+		
+		.fancy-select{
+
+			.trigger{
+				
+				@include up-to-smartphone{
+					height: 68px;
+					line-height: 68px;
+
+					span:before{
+						top: 22px !important;
+					}
+				}
+
+				&.open{
+					background: none !important;
+				}
+			}
+
+			.options{
+				
+				top: 50px;
+
+				@include up-to-smartphone{
+					top: 70px;
+				}	
+			}
+		}	
+	}
+}

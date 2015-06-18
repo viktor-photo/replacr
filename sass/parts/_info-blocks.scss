@@ -1,0 +1,129 @@
+.info-b{
+	position: relative;
+	width: 100%;
+	display: block;
+	padding: 0.75rem 1rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lighten($color-blue, 20%);
+	background: $color-light-blue;
+
+	.b-title{
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+
+		@include up-to-medium{
+			display: block;
+			padding: 0.25rem 0.5rem 0.75rem;
+		}
+
+		span{
+			font-size: 20px;
+			color: $color-blue;
+			text-transform: uppercase;
+			line-height: 1em;
+			display: block;
+			padding: 0.25rem 1.25rem 0.25rem 0.5rem;
+
+			@include up-to-desktop{
+				font-size: 18px;
+			}
+
+			@include up-to-tablet{
+				font-size: 16px;
+			}
+
+			@include up-to-medium{
+				font-size: 14px;
+				text-align: center;
+			}
+		}	
+	}
+
+	.b-content{
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+
+		@include up-to-medium{
+			display: block;
+		}
+
+		& > div{
+			display: block;
+			padding: 0.125rem 0.25rem 0.125rem 1.25rem;
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-color: lighten($color-blue, 10%);
+
+			@include up-to-medium{
+				padding: 1rem 0.25rem 0 0.25rem;
+				border-left: none;
+				border-top-width: 1px;
+				border-top-style: solid;
+				border-top-color: inherit;
+			}
+		}
+
+		p:only-child,
+		p:last-child{
+			margin: 0;
+		}
+	}
+
+
+	&.success-b{
+		border-color: lighten($color-green, 20%);
+		background: $color-light-green;
+
+		.b-title span{
+			color: $color-green;
+		}
+
+		.b-content > div{
+			border-color: lighten($color-green, 20%);
+		}
+	}
+
+	&.alert-b{
+		border-color: lighten($color-yellow, 10%);
+		background: $color-light-yellow;
+
+		.b-title span{
+			color: $color-yellow;
+		}
+
+		.b-content > div{
+			border-color: lighten($color-yellow, 10%);
+		}
+	}
+
+	&.error-b{
+		border-color: lighten($color-red, 20%);
+		background: $color-light-red;
+
+		.b-title span{
+			color: $color-red;
+		}
+
+		.b-content > div{
+			border-color: lighten($color-red, 20%);
+		}
+	}
+
+	&.no-bg{
+		padding: 0;
+		border: none;
+		background: none;
+
+		.b-title span{
+			padding-left: 0;
+		}
+
+		.b-content > div{
+			padding-right: 0;
+		}
+	}
+
+}

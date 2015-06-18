@@ -1,0 +1,90 @@
+.flag{
+	position: relative;
+
+	&:before{
+		content: '';
+		width: 16px;
+		height: 12px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -6px;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 100%;
+	}
+
+	&.austria:before{
+		background-image: url('../img/icons/svg/flags/austria.svg'); 
+	}
+	&.belgium:before{
+		background-image: url('../img/icons/svg/flags/belgium.svg'); 
+	}
+	&.denmark:before{
+		background-image: url('../img/icons/svg/flags/denmark.svg'); 
+	}
+	&.france:before{
+		background-image: url('../img/icons/svg/flags/france.svg'); 
+	}
+	&.germany:before{
+		background-image: url('../img/icons/svg/flags/germany.svg'); 
+	}
+	&.greece:before{
+		background-image: url('../img/icons/svg/flags/greece.svg'); 
+	}
+	&.ireland:before{
+		background-image: url('../img/icons/svg/flags/ireland.svg'); 
+	}
+	&.israel:before{
+		background-image: url('../img/icons/svg/flags/israel.svg'); 
+	}
+	&.italy:before{
+		background-image: url('../img/icons/svg/flags/italy.svg'); 
+	}
+	&.netherlands:before{
+		background-image: url('../img/icons/svg/flags/netherlands.svg'); 
+	}
+	&.china:before{
+		background-image: url('../img/icons/svg/flags/china.svg'); 
+	}
+	&.poland:before{
+		background-image: url('../img/icons/svg/flags/poland.svg'); 
+	}
+	&.portugal:before{
+		background-image: url('../img/icons/svg/flags/portugal.svg'); 
+	}
+	&.romania:before{
+		background-image: url('../img/icons/svg/flags/romania.svg'); 
+	}
+	&.russia:before{
+		background-image: url('../img/icons/svg/flags/russia.svg'); 
+	}
+	&.saudi-arabia:before{
+		background-image: url('../img/icons/svg/flags/saudi-arabia.svg'); 
+	}
+	&.spain:before{
+		background-image: url('../img/icons/svg/flags/spain.svg'); 
+	}
+	&.sweden:before{
+		background-image: url('../img/icons/svg/flags/sweden.svg'); 
+	}
+	&.switzerland:before{
+		background-image: url('../img/icons/svg/flags/switzerland.svg'); 
+	}
+	&.thailand:before{
+		background-image: url('../img/icons/svg/flags/thailand.svg'); 
+	}
+	&.turkey:before{
+		background-image: url('../img/icons/svg/flags/turkey.svg'); 
+	}
+	&.emirates:before{
+		background-image: url('../img/icons/svg/flags/emirates.svg'); 
+	}
+	&.uk:before{
+		background-image: url('../img/icons/svg/flags/uk.svg'); 
+	}
+	&.usa:before{
+		background-image: url('../img/icons/svg/flags/usa.svg'); 
+	}
+}	

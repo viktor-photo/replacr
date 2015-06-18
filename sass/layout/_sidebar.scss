@@ -1,0 +1,361 @@
+#sidebar{
+	position: relative;
+    width: 235px;
+    height: 100%;
+	background: $color-light-green;
+	font-size: $initial-size;
+    -webkit-box-flex: 0 auto;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-align-self: stretch;
+	-moz-align-self: stretch;
+	-ms-align-self: stretch;
+	align-self: stretch;
+
+	@include transition(all, 0.15s);
+
+	@include up-to-tablet{
+		width: 45px;
+
+		& > div {
+			padding-left: 0.9375rem;
+		}
+	}
+
+	&:before{
+		content: '';
+		width: 400%;
+		min-width: 500px;
+		height: 100%;
+		padding: 1.5rem 0;
+		display: block;
+		background: $color-light-green;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 100%;
+	}
+
+	&.wide{
+		width: 235px;
+	}
+
+	&.narrow{
+		width: 45px;
+	}
+
+	& > div{
+		padding: 1.5rem 0;
+
+		@include transition(padding, 0.25s);
+	}
+
+
+	// Profile header
+	.profile-header{
+		position: relative;
+
+		.profile-avatar{
+			width: 50px;
+			height: 50px;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.profile-info{
+			position: relative;
+			display: table;
+			margin:  1.5rem auto;
+
+			& > div{
+				display: table-cell;
+
+				&.greeting{
+					border-right: 1px solid $color-navy;
+				}
+
+				span{
+					display: block;
+					padding: 0 0.75rem;
+					white-space: nowrap;
+					font-family: $secondary-font-family;
+				}
+
+				i{
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+					border-radius: 50%;
+					text-align: center;
+					margin-left: 2px;
+					line-height: 16px;
+					font-size: 10px;
+					font-style: normal;
+					color: $color-white;
+					background: $color-blue;
+				}
+			}
+		}
+	}
+
+
+	// Account Stat's
+	.account-stats{
+		position: relative;
+
+		h5{
+			height: 38px;
+			line-height: 38px;
+			display: block;
+			text-align: center;
+			border-top: 1px solid lighten($color-blue, 25%);
+			border-bottom: 1px solid lighten($color-blue, 25%);
+		}
+
+		.stats-table{
+			position: relative;
+			padding: 0.75rem 0.5rem;
+
+			div{
+				display: block;
+				position: relative;
+
+				& > *{
+					display: inline-block;
+					line-height: 2.25em;
+				}
+
+				strong{
+					width: 33%;
+					text-align: right;
+					padding-right: 5px;
+					color: $color-blue;
+				}
+
+				span{
+					width: 65%;
+				}
+			}
+		}
+	}
+
+	// Sidebar menu
+	.sidebar-menu{
+		position: relative;
+		margin: 0 0 1.5rem;
+
+		li{
+			list-style: none;
+			border-top: 1px solid lighten($color-blue, 25%);
+
+			a{
+				display: block;
+				position: relative;
+				text-transform: uppercase;
+				font-size: 12px;
+				color: $color-navy;
+				line-height: 40px;
+				height: 40px;
+				padding: 0 0.75rem;
+				background: $transparent-white;
+
+				&.current{
+					background: $color-blue;
+					color: $color-white;
+
+					&:after {
+						right: 0;
+						top: 50%;
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(255, 255, 255, 0);
+						border-right-color: #fff;
+						border-width: 20px;
+						margin-top: -20px;
+					}
+				}
+
+				&:hover{
+					background: $color-blue;
+					color: $color-white;
+				}
+
+				i{
+					width: 30px;
+					height: 40px;
+					display: inline-block;
+					position: relative;
+
+					&:before{
+						position: absolute;
+						top: 0;
+						height: 40px;
+						text-align: center;
+						font-size: 24px;
+						line-height: 40px;
+						width: 30px;
+						display: block;
+					}
+				}
+
+				span{
+					display: inline-block;
+					vertical-align: top;
+					line-height: 44px;
+					padding-left: 0.75rem;
+					position: relative;
+				}
+			}
+		}
+	}
+
+	// Hello Block
+	.hello-block{
+		position: relative;
+
+		// Skype block
+		.skype{
+			position: relative;
+			border-bottom: 1px solid transparent;
+
+			a{
+				display: block;
+				text-align: center;
+				line-height: 1.25em;
+
+				.block-wrap{
+					padding: 0.825rem;
+					color: $color-navy;
+					display: block;
+					background: $color-green;
+
+					.text{
+						position: relative;
+						display: block;
+						margin-top: 0.325rem;
+					}
+				}
+
+				.icon-skype{
+					display: block;
+					text-align: center;
+					color: $color-white;
+					font-size: 2.5rem;
+				}
+
+				em{
+					color: $color-white;
+					font-style: normal;
+				}
+
+				.q{
+					font-size: 14px;
+				}
+
+				.skype-footer{
+					color: $color-white;
+					background: $color-navy;
+					display: block;
+					line-height: 2.5em;
+					font-size: 10px;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		// Write a ticket block
+		.write-ticket{
+			position: relative;
+			border-bottom: 1px solid transparent;
+
+			a{
+				display: block;
+				line-height: 1.25em;
+				color: $color-navy;
+				display: block;
+				background: $color-yellow;
+				padding: 0.375rem 0.625rem;
+
+				.icon-new-message{
+					display: block;
+					position: relative;
+					color: $color-white;
+					font-size: 2.5rem;
+					margin-bottom: 5px;
+				}
+
+				.block-wrap{
+					position: absolute;
+					width: 100%;
+					padding-left: 50px;
+					display: block;
+					text-transform: uppercase;
+				}
+
+				.title{
+					font-size: 14px;
+					display: block;
+				}
+				.subtitle{
+					font-size: 12px;
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+
+
+	// Narrow sidebar styles
+	&.narrow{
+
+		.profile-avatar{
+			width: 30px;
+			height: 30px;
+		}
+
+		.profile-info,
+		.account-stats,
+		.sidebar-menu li span,
+		.hello-block .skype .text,
+		.hello-block .skype .skype-footer,
+		.hello-block .write-ticket .block-wrap{
+			display: none !important;
+		}
+
+		.sidebar-menu{
+			margin: 1.25rem 0 0;
+		}
+		.sidebar-menu li i{
+			margin: 0 auto;
+			display: block;
+		}
+		.sidebar-menu li a{
+			padding: 0;
+		}
+		.sidebar-menu li a.current{
+			&:after{
+				display: none;
+			}
+		}
+
+		.hello-block .skype i{
+			font-size: 1.625rem;
+		}
+		.hello-block .skype a .block-wrap{
+			padding: 0.625rem 0;
+		}
+		.hello-block .write-ticket a{
+			padding: 0.325rem 0.375rem;
+		}
+		.hello-block .write-ticket i{
+			font-size: 2rem;
+		}
+	}
+}

@@ -1,0 +1,545 @@
+<!doctype html>
+<!--[if IE 8]><html lang="pl" class="no-js lt-ie10 lt-ie9 ie8 ie" ng-app='App'> <![endif]-->
+<!--[if IE 9]><html lang="pl" class="no-js lt-ie10 ie9 ie" ng-app='App'> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="pl" class="no-js" ng-app='App'> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<title>repla.cr</title>
+		<meta name="description" content="Project description">
+		<script src="js/vendor/modernizr.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header" role="banner">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="logo left">
+						<a href="#" title="repla.cr">repla.cr</a>
+					</h1>
+
+					<div id="menu-trigger-wrap" class="left">
+						<span title="Menu"><i></i></span>
+					</div>
+
+					<div id="settings-link" class="left">
+						<span class="icon-settings"></span>
+					</div>
+
+					<div id="shorten-url-form" class="left">
+						<i class="icon-url"></i>
+						<span class="legend">Paste a long url link</span>
+						<form action="" id="shorten-url">
+							<input type="text">
+						</form>
+					</div>
+
+					<div class="account-settings right clearfix">
+						<div class="lang-select">
+							<span class="legend">Preferred language:</span>
+							<select name="" id="language">
+								<option value="1" data-icon="en">en</option>
+								<option value="2" data-icon="pl">pl</option>
+								<option value="3" data-icon="ru">ru</option>
+								<option value="4" data-icon="de">de</option>
+								<option value="5" data-icon="nl">nl</option>
+								<option value="6" data-icon="sp">sp</option>
+								<option value="7" data-icon="he">he</option>
+								<option value="8" data-icon="es">es</option>
+								<option value="9" data-icon="fr">fr</option>
+								<option value="10" data-icon="hi">hi</option>
+								<option value="11" data-icon="ar">ar</option>
+								<option value="12" data-icon="ch">ch</option>
+							</select>
+						</div>
+						<div class="prefs">
+							<a href="#" title="Settings">
+								<i class="icon-settings"></i>
+								<span>Settings</span>
+							</a>
+						</div>
+						<div class="logout-link">
+							<a href="#" title="logout">
+								<i class="icon-logout"></i>
+								<span>Logout</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div id="content">
+			<div class="row collapse">
+
+				<div class="content-flex-wrap">
+
+					<!-- Aside section -->
+					<aside id="sidebar" class="wide">
+						<div class="clearfix">
+
+							<div class="profile-header">
+								<a class="profile-avatar" href="#">
+									<img src="img/profile-default-avatar.png" alt="Profile Avatar" />
+								</a>
+
+								<div class="profile-info">
+									<div class="greeting">
+										<span><strong>Hello </strong>Janosh</span>
+									</div>
+									<div class="level">
+										<span>lvl <i>1</i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="account-stats">
+								<h5>Account Stat's</h5>
+								<div class="stats-table">
+									<div class="t-row">
+										<strong>2.14570$</strong>
+										<span>Current balance</span>
+									</div>
+									<div class="t-row">
+										<strong>1.33700$</strong>
+										<span>Total Earned - Clicks</span>
+									</div>
+									<div class="t-row">
+										<strong>0.80870$</strong>
+										<span>Total Earned - Referral</span>
+									</div>
+									<div class="t-row">
+										<strong>6</strong>
+										<span>URLs</span>
+									</div>
+									<div class="t-row">
+										<strong>702</strong>
+										<span>Clicks</span>
+									</div>
+								</div>
+							</div>
+
+							<ul class="sidebar-menu">
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-9"></i>
+										<span>g!center</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="" class="current">
+										<i class="icon icon-8"></i>
+										<span>Payout</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-7"></i>
+										<span>Website scripts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-6"></i>
+										<span>Referral System</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-5"></i>
+										<span>Referral Rallye</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-4"></i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-3"></i>
+										<span>Archive</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-2"></i>
+										<span>Last 15 User Payouts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-1"></i>
+										<span>GCa.sh Forum</span>
+									</a>
+								</li>
+							</ul>
+
+							<!-- Hello Block -->
+							<div class="hello-block">
+
+								<!-- Skype block -->
+								<div class="skype">
+									<a href="#" title="">
+										<span class="block-wrap">
+											<i class="icon-skype"></i>
+											<span class="text">
+												<em class="q">Questions?</em> Contact support<br />Or add manually: <em>nk-gcash</em>
+											</span>
+										</span>
+										<span class="skype-footer">Write a message or call</span>
+									</a>
+								</div>
+
+								<!-- Write a ticket -->
+								<div class="write-ticket">
+									<a href="#" title="">
+										<i class="icon-new-message"></i>
+										<span class="block-wrap v-align">
+											<span class="title">Something unusual?</span>
+											<span class="subtitle">write a ticket</span>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</aside>
+
+					<!-- Main content section -->
+					<main id="main">
+						<div class="row collapse">
+							<div class="small-12 columns">
+
+								<article class="">
+									<div class="header pt">
+										<h4>Creating the campaign</h4>
+										<!-- <span class="subheader">subtitle</span> -->
+									</div>
+
+									<hr class="blue mb30" />
+
+									<div class="row">
+										<form action="" id="" name="" class="blue-brdr">
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh16" for="website-name">Website Name:<br /><span class="color-grey">only for internal use</span></label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="text" placeholder="" name="" id="website-name" >
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh16" for="website-url">Website URL:<br /><span class="color-grey">must comply with our </span><a href="#" class="inline">rules</a></label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="text" placeholder="" name="" id="website-url" >
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh16" for="max-budget">Max. Daily Budget ($):<br /><span class="color-grey">enter 0 for unlimited budget</span></label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="text" placeholder="" name="" id="max-budget" >
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="small-12 columns">
+
+													<!-- Info block -->
+													<div class="info-b alert-b mt20 mb20">
+														<div class="b-title">
+															<span>information!</span>
+														</div>
+														<div class="b-content">
+															<div>
+																<p>We strongly recommend to set a maximum daily budget to spread the traffic out over at least 24 hours. <a href="#" title="More information">More information</a></p>
+															</div>
+														</div>
+													</div>
+													<!-- End of Info block -->
+
+												</div>
+											</div>
+
+											<div class="header pt">
+												<h4>Additional information</h4>
+											</div>
+
+											<hr class="blue mt20 mb30">
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh12">Traffic Sources:</label>
+												</div>
+												<div class="small-6 medium-3 large-2 columns transition">
+													<input type="checkbox" checked name="" id="check-desktop" >
+													<label for="check-desktop">Desktop</label>
+												</div>
+												<div class="small-6 medium-3 large-2 columns transition end">
+													<input type="checkbox" name="" id="check-mobile" >
+													<label for="check-mobile">Mobile</label>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh16" for="mobile-target">Mobile Targeting:<br /><span class="color-grey">Android/iOS targeting now available</span></label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="text" placeholder="" name="" id="mobile-target" >
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh16" for="adobe-flash">Adobe Flash Enabled:<br /><span class="color-grey">Users with Flash disabled now available</span></label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="text" placeholder="" name="" id="adobe-flash" >
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh12">Traffic Sources:</label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition end">
+													<input type="checkbox" name="" id="traffic-src" >
+													<label for="traffic-src" class="left">White label</label>
+													<span class="tip question left" title="Tooltip content goes here">?</span>
+												</div>
+											</div>
+
+											<div class="header pt">
+												<h4>Billing address</h4>
+											</div>
+
+											<hr class="blue mt20 mb30">
+
+											<div class="row billing-section">
+												<div class="small-12 medium-6 columns transition">
+													<div class="row collapse">
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="f.name">First Name:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="f.name" disabled value="Janosch" class="light-blue-bg color-blue">
+														</div>
+
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="l.name">Surname:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="l.name" disabled value="Karla" class="light-blue-bg color-blue">
+														</div>
+
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="address">Address:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="address" disabled value="Alter Hohlweg 15b" class="light-blue-bg color-blue">
+														</div>
+													</div>
+												</div>
+
+												<div class="small-12 medium-6 columns transition">
+													<div class="row collapse">
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="post.code">Post Code:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="post.code" disabled value="58093 NRW" class="light-blue-bg color-blue">
+														</div>
+
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="city">City:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="city" disabled value="HAGEN" class="light-blue-bg color-blue">
+														</div>
+
+														<div class="small-12 medium-5 large-3 columns transition">
+															<label for="country">Country:</label>
+														</div>
+														<div class="small-12 medium-7 large-9 columns transition">
+															<input type="text" id="country" disabled value="Thailand" class="light-blue-bg color-blue">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="small-12 medium-4 large-3 right columns">
+													<button id="edit-billing-info" class="button blue expand mt10 mb10">Change billing address</button>
+												</div>
+
+												<div class="small-12 medium-8 large-8 left columns">
+													
+													<!-- Info block -->
+													<div class="info-b alert-b no-bg mt10 mb20">
+														<div class="b-title">
+															<span>information!</span>
+														</div>
+														<div class="b-content">
+															<div>
+																<p>If the billing address is not correct, please click change billing address to cancel this order and update your Account Details.</p>
+															</div>
+														</div>
+													</div>
+													<!-- End of Info block -->
+												</div>
+											</div>
+
+											<div class="header pt">
+												<h4>Additional information</h4>
+											</div>
+
+											<hr class="blue mt20 mb30">
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh12">Terms &amp; Conditions:</label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="checkbox" name="" id="terms" >
+													<label for="terms" class="left">I agree to the &nbsp;</label><a href="#" title="Terms and conditions" class="left lh12"> Terms and conditions</a>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-12 medium-5 large-4 columns transition">
+													<label class="mb10 lh12">Disclaimer:</label>
+												</div>
+												<div class="small-12 medium-7 large-8 columns transition">
+													<input type="checkbox" name="" id="disclaimer" >
+													<label for="disclaimer" class="left">I agree that repla.cr will not refund any payments due to low/zero conversions or profit from a campaign. repla.cr will show my website for at least 5 seconds to real people.</label>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="small-12 column">
+													<section class="widget border green mt30 mb20">
+														<div class="header">
+															<h4>Payment Method</h4>
+														</div>
+
+														<div class="payment-methods">
+															<div>
+																<input type="radio" name="payment-methods" id="method-paypal" >
+																<label for="method-paypal">
+																	<img src="img/icons/payment/paypal.png" alt="Paypal icon">
+																</label>
+															</div>
+															<div>
+																<input type="radio" name="payment-methods" id="method-bitcoin" >
+																<label for="method-bitcoin">
+																	<img src="img/icons/payment/bitcoin.png" alt="Bitcoin icon">
+																</label>
+															</div>
+															<div>
+																<input type="radio" name="payment-methods" checked id="method-sepa" >
+																<label for="method-sepa">
+																	<img src="img/icons/payment/sepa.png" alt="SEPA icon">
+																</label>
+															</div>
+															<div>
+																<input type="radio" name="payment-methods" id="method-wire" >
+																<label for="method-wire">
+																	<img src="img/icons/payment/wire.png" alt="Wire transfer icon">
+																</label>
+															</div>
+														</div>
+
+														<div class="header pt mb0">
+															<h4>Order description</h4>
+														</div>
+
+														<div class="order-desc">
+															<div class="t-row">
+																<div class="cell-1"><span>1</span></div>
+																<div class="cell-2"><span>Interstitial traffic for <strong>United States</strong></span></div>
+																<div class="cell-3"><span><strong>1,000</strong> k traffic</span></div>
+																<div class="cell-4"><span>CPM <span class="color-green">5.0$</span></span></div>
+																<div class="cell-5"><span>for <span class="color-green">5.0$</span></span></div>
+															</div>
+															<div class="t-row total">
+																<div class="cell-1">&nbsp;</div>
+																<div class="cell-2">&nbsp;</div>
+																<div class="cell-3"><span>Subtotal: <span class="color-green">5.0$</span></span></div>
+																<div class="cell-4"><span>VAT (0.00% Tax): <span class="color-green">0$</span></span></div>
+																<div class="cell-5"><span>Amount Payable: <span class="color-green">5.0$</span></span></div>
+															</div>
+														</div>
+
+														<div class="row collapse">
+															<input type="submit" class="button mb0 green expand" value="Generate Configuration" >
+														</div>
+													</section>	
+												</div>
+											</div>
+
+										</form>
+									</div>
+
+								</article>
+
+							</div>
+						</div>
+					</main>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" role="contentinfo">
+			<div class="row">
+				<div class="small-12 medium-4 columns">
+					<div class="logo-wrap">
+						<a href="#" class="logo" title="repla.cr">repla.cr</a>
+						<span class="copyright">2015 © repla.cr </span>
+					</div>
+				</div>
+				<div class="small-12 medium-8 columns">
+					<nav>
+						<a href="#" title="Home" class="current">Home</a>
+						<a href="#" title="Datenschutz">Datenschutz</a>
+						<a href="#" title="Impressum">Impressum</a>
+						<a href="#" title="AGB">AGB</a>
+						<a href="#" title="developer">developer</a>
+						<a href="#" title="Monetize Your Website">Monetize Your Website</a>
+						<a href="#" title="Contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/fancySelect.min.js"></script>
+		<script src="js/vendor/fastclick.js"></script>
+		<script src="js/vendor/placeholder.js"></script>
+		<script src="js/vendor/tipso.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

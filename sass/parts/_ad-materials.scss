@@ -1,0 +1,89 @@
+.ad-item{
+	position: relative;
+	padding: 60px 0;
+
+	@include up-to-smartphone{
+		padding: 30px 0;
+	}
+
+	&:first-of-type{
+		padding-top: 20px;
+	}
+
+	&:last-of-type{
+		padding-bottom: 20px;
+	}
+
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	h4{
+		display: block;
+		margin: 1.5rem 0 1.2rem;
+	}
+
+	.banner-code{
+		position: relative;
+		display: table;
+		width: 100%;
+
+		& > div{
+			display: table-cell;
+
+			@include up-to-smartphone{
+				display: block;
+			}
+		}
+
+		.b-title{
+			width: 80px;
+
+			@include up-to-smartphone{
+				display: block;
+				text-align: center;
+				font-weight: 700;
+				width: 100%;
+			}
+		}
+
+		.b-copy{
+			width: 60px;
+			text-align: center;
+			
+			@include up-to-smartphone{
+				text-align: left;
+				width: 100%;
+			}
+
+			span{
+				position: relative;
+				top: 5px;
+
+				@include up-to-smartphone{
+					top: 0;
+					float: right;
+					margin-top: 5px;
+
+					&:after{
+						display: none;
+					}
+				}	
+			}
+		}
+	}
+}
+
+.ad-container{
+	position: relative;
+
+	&.bordered{
+		border: 1px solid $color-silver;
+	}
+
+	&.center{
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

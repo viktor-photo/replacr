@@ -1,0 +1,101 @@
+#shorten-url-form{
+	position: relative;
+	font-size: $initial-size;
+	z-index: 100;
+	
+	@include up-to-medium{
+		width: 36px;
+	}
+
+	@include up-to-smartphone{
+		width: 30px;
+	}
+	
+	span.legend{
+		position: absolute;
+		top: 1rem;
+		left: 0.625rem;
+		cursor: pointer;
+		white-space: nowrap;
+
+		@include transition(all, 0.25s);
+
+		@include up-to-medium{
+			display: none;
+		}
+	}
+
+	i.icon-url{
+		position: absolute;
+		color: $color-blue;
+		font-size: 24px;
+		top: 0.8rem;
+		left: 0.625rem;
+		cursor: pointer;
+		display: none;
+
+		@include up-to-medium{
+			display: block;
+			left: 0.325rem;
+		}
+
+		@include up-to-smartphone{
+			left: 0.125rem;
+			font-size: 22px;
+			top: 0.925rem;
+		}
+	}
+
+	form#shorten-url{
+		position: absolute;
+		height: 50px;
+		line-height: 50px;
+		margin-left: 0.25rem;
+		opacity: 0;
+		visibility: hidden;
+		min-width: 0;
+
+		@include transition(width, 0.25s);
+
+		input[type="text"]{
+			background: transparent;
+			border: none;
+			position: relative;
+			top: 8px; 
+			padding: 0 0.5rem;
+			color: $color-white;
+			margin: 0;
+			width: 120px;
+		}
+	}
+	
+	&.active{
+		
+		span.legend{
+			top: 0.125rem;
+			left: 0.75rem;
+			font-size: 10px;
+			opacity: 0.5;
+			z-index: 101;
+			cursor: default;
+			pointer-events: none;
+		}
+
+		i.icon-url{
+			color: $color-green;
+		}
+
+		form#shorten-url{
+			opacity: 1;
+			visibility: visible;
+			@include opacity;
+			min-width: 450px;
+			background: lighten($color-navy, 3%);
+
+			input[type="text"]{
+				width: 100%;
+			}
+		}	
+	}
+
+}

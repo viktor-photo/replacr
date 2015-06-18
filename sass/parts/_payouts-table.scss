@@ -1,0 +1,117 @@
+.payouts-table{
+	position: relative;
+	font-family: $main-font-family;
+
+	.t-row{
+		display: table;
+		width: 100%;
+
+		@include up-to-medium{
+			display: block;
+		}
+
+		& > div{
+			display: table-cell;
+			height: 62px;
+			vertical-align: middle;
+
+			@include up-to-desktop{
+				height: 48px;
+			}
+
+			@include up-to-medium{
+				display: block;
+				height: auto;
+			}
+		}
+
+		.cell-1{
+			text-align: left;
+
+			.title{
+				font-size: 20px;
+				font-weight: 300;
+
+				@include up-to-desktop{
+					font-size: 16px;
+				}
+
+				@include up-to-tablet{
+					font-size: 12px;
+				}
+			}
+		}
+		.cell-2{
+			text-align: right;
+
+			@include up-to-medium{
+				text-align: left;
+			}
+		}
+
+		.payouts-counter{
+			margin: 0;
+			float: right;
+
+			@include up-to-medium{
+				float: none;
+			}
+
+			span{
+
+				@include up-to-desktop{
+					width: 30px;
+					font-size: 24px;
+					line-height: 48px;
+					height: 48px;
+				}
+
+				@include up-to-smartphone{
+					height: 36px;
+					line-height: 36px;
+					width: 20px;
+					font-size: 20px;
+				}
+
+				&.dot{
+					line-height: 62px;
+
+					@include up-to-desktop{
+						line-height: 48px;
+						height: 48px;
+						width: 20px;
+						font-size: 36px;
+					}
+
+					@include up-to-smartphone{
+						height: 36px;
+						line-height: 36px;
+						width: 12px;
+						font-size: 30px;
+					}
+				}
+
+				&.currency{
+					@include up-to-desktop{
+						width: 24px;
+					}
+					@include up-to-tablet{
+						width: 22px;
+					}
+					@include up-to-smartphone{
+						width: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	hr{
+		@include up-to-desktop{
+			margin: 15px 0;
+		}
+		@include up-to-tablet{
+			margin: 10px 0;
+		}
+	}	
+}

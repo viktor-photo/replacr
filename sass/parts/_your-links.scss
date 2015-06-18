@@ -1,0 +1,151 @@
+.your-links{
+
+	.header{
+		position: relative;
+
+		.links{
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			@include up-to-medium{
+				position: relative;
+				display: table;
+				margin: 15px auto 5px;
+				text-align: center;
+			}
+
+			a{
+				color: $color-navy;
+				margin-left: 12px;
+
+				&.active{
+					color: $color-green;
+				}
+			}
+		}
+	}
+
+	input[type="text"]{
+		padding-left: 45px;
+		background: url('../img/icons/svg/icon-search.svg') no-repeat 7px 3px $color-white;
+		background-size: 24px 24px;
+
+		&:focus{
+			background: url('../img/icons/svg/icon-search.svg') no-repeat 7px 3px $color-white;
+			background-size: 24px 24px;
+		}
+	}
+
+	.margin-fix{
+		margin: 0 -0.5rem !important;
+	}
+
+	.t-row{
+		.cell-1{
+			width: 30px;
+			vertical-align: top;
+			padding-top: 2px;
+			z-index: 1;
+
+			@include up-to-medium{
+				position: absolute;
+				display: block;
+			}
+			@include up-to-smartphone{
+
+			}
+		}
+		.cell-2{
+			vertical-align: top;
+
+			i{
+				width: 14px;
+				height: 16px;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 3px;
+				background: url('../img/icons/link.png') no-repeat 0 0;
+			}
+
+			strong{
+				display: block;
+				font-size: 14px;
+				margin-left: 30px;
+				line-height: 1em;
+				margin-bottom: 5px;
+			}
+			span{
+				margin-left: 30px;
+				display: block;
+			}
+
+			@include up-to-medium{
+				display: block;
+				width: 100%;
+				padding-left: 30px;
+
+				i{
+					left: 28px;
+				}
+			}
+			@include up-to-smartphone{
+
+			}
+		}
+		.cell-3{
+			vertical-align: top;
+			width: 200px;
+
+			.actions{
+				display: block;
+				margin-top: 5px;
+
+				a{
+					display: inline-block;
+					width: 32.0%;
+				}
+			}
+
+			@include up-to-medium{
+				display: block;
+				margin-top: 10px;
+				padding-left: 60px;
+
+				.actions{
+					width: 160px;
+				}
+			}
+			@include up-to-smartphone{
+
+			}
+		}
+		.cell-4{
+			width: 70px;
+			text-align: right;
+			vertical-align: top;
+
+			strong{
+				font-size: 20px;
+				display: block;
+				line-height: 1em;
+			}
+
+			span{
+				font-size: 14px;
+			}
+
+			@include up-to-medium{
+				display: block;
+				width: 100%;
+				text-align: left;
+				margin-left: 60px;
+				margin-top: 10px;
+			}
+			@include up-to-smartphone{
+
+			}
+		}
+	}
+}

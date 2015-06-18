@@ -1,0 +1,111 @@
+.payouts-counter{
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	
+	.set{
+		position: relative;
+
+		&:first-child span:first-child::after{
+			left: 0;
+			top: 50%;
+			border: solid transparent;
+			content: '';
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(244, 252, 248, 0);
+			border-left-color: #F4FCF8;
+			border-width: 4px;
+			margin-top: -4px;
+		}
+	}
+
+	span{
+		height: 62px;
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		font-size: 40px;
+		margin: 0;
+		padding: 0;
+		z-index: 1;
+		color: $color-green;
+		overflow: hidden;
+
+		@include up-to-desktop{
+			font-size: 32px;
+			height: 54px;
+			line-height: 54px;
+		}
+
+		@include up-to-tablet{
+			font-size: 28px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+		@include up-to-smartphone{
+			font-size: 22px;
+			height: 46px;
+			line-height: 46px;
+		}
+
+		&.numbr{
+			width: 40px;
+			font-weight: 300;
+			color: $color-white;
+			text-align: center;
+			background: $color-green;
+			overflow: hidden;
+			border-left: 1px solid darken($color-green, 8%);
+			
+			&:first-child{
+				border-left: none;
+				border-radius: 3px 0 0 3px;
+			}
+
+			&:last-child{
+				border-radius: 0 3px 3px 0;
+			}
+
+			&:only-child{
+				border-radius: 3px;
+			}
+
+			&:before{
+				content: '';
+				width: 100%;
+				height: 50%;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				background: darken($color-green, 5%);
+			}
+		}
+
+		&.dot{
+			width: 20px;
+			font-size: 46px;
+			font-weight: 300;
+		}
+
+		&.currency{
+			width: 36px;
+			text-align: right;
+			font-weight: 700;
+
+			@include up-to-tablet{
+				width: 30px;
+			}
+			@include up-to-smartphone{
+				width: 20px;
+			}
+		}
+	}
+}

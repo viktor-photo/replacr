@@ -1,0 +1,128 @@
+.winner-places{
+	position: relative;
+	margin: 0 -0.9375em;
+
+	.place{
+		position: relative;
+		display: block;
+		border-width: 1px;
+		border-style: solid;
+		padding: 0 60px 0 0;
+		overflow: hidden;
+
+		@include up-to-desktop{
+			padding-right: 120px;
+		}
+		@include up-to-smartphone{
+			padding-right: 90px;
+		}
+
+		&:before{
+			font-size: 12.5rem;
+			line-height: 1em;
+			font-family: $main-font-family;
+			font-weight: 100;
+			color: $color-white;
+			display: block;
+			position: absolute;
+			right: -0.225em;
+			top: 0.5rem;
+
+			@include up-to-desktop{
+				right: 10px;
+				top: 5px;
+				font-size: 10rem;
+			}
+			@include up-to-smartphone{
+				font-size: 8rem;
+				top: 1rem;
+			}
+		}
+
+		.inner{
+			padding: 20px 0 20px 15px;
+			background: $color-white;
+		}
+
+		span{
+			display: block;
+
+			em{
+				font-style: normal;
+				font-weight: 700;
+			}
+		}
+
+		.amount{
+			color: $color-green;
+			font-size: 40px;
+			line-height: 1em;
+			font-weight: 300;
+			margin-bottom: 0.5rem;
+
+			@include up-to-widescreen{
+				font-size: 30px;
+			}
+
+			@include up-to-desktop{
+				font-size: 36px;
+			}
+		}
+
+		.title{
+			font-size: 16px;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			margin-bottom: 0.5rem;
+
+			@include up-to-widescreen{
+				font-size: 14px;
+			}
+
+			@include up-to-desktop{
+				br{
+					display: none;
+				}
+			}
+		}
+
+		&.gold{
+			border-color: $color-yellow;
+			background: $color-yellow;
+
+			&:before{
+				content: '1';
+			}
+
+			em{
+				color: $color-yellow;
+			}
+		}
+
+		&.silver{
+			border-color: $color-silver;
+			background: $color-silver;
+
+			&:before{
+				content: '2';
+			}
+
+			em{
+				color: $color-silver;
+			}
+		}
+
+		&.bronze{
+			border-color: $color-bronze;
+			background: $color-bronze;
+
+			&:before{
+				content: '3';
+			}
+
+			em{
+				color: $color-bronze;
+			}
+		}
+	}
+}

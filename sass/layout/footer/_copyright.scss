@@ -1,0 +1,13 @@
+.copyright{
+	line-height: 1rem;
+	position: relative;
+	top: 3px;
+	margin-left: 1rem;
+	display: inline;
+	vertical-align: middle;
+	font-size: $initial-size;
+
+	@include up-to-tablet{
+		margin-left: 0.35rem;
+	}
+}

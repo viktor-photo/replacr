@@ -1,0 +1,135 @@
+.total-hits{
+	position: relative;
+	padding: 70px 0 60px;
+
+	@include up-to-desktop{
+		padding: 50px 0 40px;
+	}
+
+	@include up-to-tablet{
+		padding: 30px 0 15px;
+	}
+
+	h2{
+		color: $color-white;
+		font-size: 36px;
+		font-weight: 300;
+
+		@include up-to-desktop{
+			font-size: 24px;
+		}
+		@include up-to-tablet{
+			font-size: 20px;
+		}
+	}
+
+	.payouts-counter{
+		position: relative;
+
+		.numbr{
+			height: 92px;
+			line-height: 92px;
+			width: 60px;
+			border-radius: 0;
+			position: relative;
+			font-size: 60px;
+			font-weight: 200;
+
+			&:before{
+				width: 100% !important;
+			}
+
+			&:nth-child(1n){
+				border-radius: 0;
+			}
+
+			&:first-child{
+				border-radius: 5px 0 0 5px;
+
+				&:after{
+					display: none;
+				}
+			}
+			&:last-child{
+				border-radius: 0 5px 5px 0;
+			}
+
+			@include up-to-desktop{
+				height: 75px;
+				line-height: 75px;
+				font-size: 40px;
+				width: 40px;
+			}
+
+			@include up-to-tablet{
+				height: 48px;
+				line-height: 48px;
+				font-size: 26px;
+				width: 26px;
+			}
+
+			@include up-to-smartphone{
+				height: 36px;
+				line-height: 36px;
+				font-size: 18px;
+				width: 20px;
+			}
+		}
+
+		.dot{
+			color: $color-white;			
+			font-size: 60px;
+			font-weight: 200;
+			width: 40px;
+
+			@include up-to-desktop{
+				width: 25px;
+			}
+
+			@include up-to-smartphone{
+				font-size: 48px;
+				line-height: 36px;
+				height: 36px;
+				width: 16px;
+			}
+		}
+
+		.set:first-child{
+
+			span:first-child:after {
+				content: '';
+				height: 0;
+				width: 0;
+				left: 0;
+				top: 50%;
+				display: block;
+				border: solid transparent;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(34, 49, 63, 0);
+				border-left-color: #22313f;
+				border-width: 10px;
+				margin-top: -10px;
+
+				@include up-to-tablet{
+					border-width: 5px;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+
+	form{
+		position: relative;
+
+		input[type="text"]{
+			line-height: 44px;
+			height: 44px;
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			padding-left: 60px;
+			background: url('../img/icons/svg/icon-url.svg') no-repeat 10px center $color-white;
+			background-size: 40px auto;
+		}
+	}
+}

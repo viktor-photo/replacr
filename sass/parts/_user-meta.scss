@@ -1,0 +1,49 @@
+.user-meta{
+	position: relative;
+
+	.widget.border{
+		position: relative;
+		padding: 0.75rem 20px 0;
+		margin-bottom: 1.25rem;
+
+		.header{
+			padding-bottom: 0.5rem;
+			margin-bottom: 0;
+
+			h2{
+				font-size: 60px;
+				line-height: 1em;
+				font-weight: 300;
+
+				@include up-to-desktop{
+					font-size: 48px;
+				}
+
+				@include up-to-tablet{
+					font-size: 36px;
+				}
+			}
+		}
+		
+		.table{
+			width: 100%;
+
+			span{
+				height: 50px;
+				width: 100%;
+				font-size: 14px;
+				text-transform: uppercase;
+				line-height: 1.1em;
+				color: $color-navy;
+				display: table-cell;
+				vertical-align: middle;
+				margin-bottom: 0;
+				text-align: center;
+
+				@include up-to-desktop{
+					font-size: $initial-size;
+				}
+			}
+		}
+	}
+}

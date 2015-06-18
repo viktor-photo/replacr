@@ -1,0 +1,131 @@
+.button{
+	display: inline-block;
+	width: auto;
+	position: relative;
+	color: $color-white;
+	font-size: $initial-size;
+	font-family: $main-font-family;
+	padding: 0 2.25rem;	
+	line-height: 36px;
+	height: 34px;
+	text-transform: uppercase;
+	background-color: $color-blue;
+
+	@include transition(all, 0.25s);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		outline: none;
+	}
+	
+	// Navy button
+	&.navy{
+		background-color: $color-navy;
+	}
+	&.navy:hover,
+	&.navy:active,
+	&.navy:focus{
+		background-color: darken($color-navy, 5%);
+	}
+	
+	// Blue button
+	&.blue{
+		background-color: $color-blue;
+	}
+	&.blue:hover,
+	&.blue:active,
+	&.blue:focus{
+		background-color: darken($color-blue, 10%);
+	}
+	
+	// Light blue button
+	&.light-blue{
+		background-color: $color-light-blue;
+		color: $color-blue;
+		border: 1px solid $color-blue;
+	}
+	&.light-blue:hover,
+	&.light-blue:active,
+	&.light-blue:focus{
+		background-color: darken($color-light-blue, 5%);
+	}
+	
+	// Red button
+	&.red{
+		background-color: $color-red;
+	}
+	&.red:hover,
+	&.red:active,
+	&.red:focus{
+		background-color: darken($color-red, 10%);
+	}
+
+	// Light red button
+	&.light-red{
+		background-color: $color-light-red;
+		color: $color-red;
+		border: 1px solid $color-light-red;
+	}
+	&.light-red:hover,
+	&.light-red:active,
+	&.light-red:focus{
+		background-color: darken($color-light-red, 5%);
+	}
+	
+	// Green button
+	&.green{
+		background-color: $color-green;
+	}
+	&.green:hover,
+	&.green:active,
+	&.green:focus{
+		background-color: darken($color-green, 10%);
+	}
+
+	// Light green button
+	&.light-green{
+		background-color: $color-light-green;
+		color: $color-green;
+		border: 1px solid $color-green;
+	}
+	&.light-green:hover,
+	&.light-green:active,
+	&.light-green:focus{
+		background-color: darken($color-light-green, 5%);
+	}
+	
+	// Yellow button
+	&.yellow{
+		background-color: $color-yellow;
+	}
+	&.yellow:hover,
+	&.yellow:active,
+	&.yellow:focus{
+		background-color: darken($color-yellow, 10%);
+	}
+
+	// Light yellow button
+	&.light-yellow{
+		background-color: $color-light-yellow;
+		color: $color-yellow;
+		border: 1px solid $color-yellow;
+	}
+	&.light-yellow:hover,
+	&.light-yellow:active,
+	&.light-yellow:focus{
+		background-color: darken($color-light-yellow, 5%);
+	}
+
+	&.large{
+		height: 44px;
+		line-height: 46px;
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+		font-size: 14px;
+	}
+}

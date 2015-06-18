@@ -1,0 +1,146 @@
+.refferals-page{
+	position: relative;
+	
+	.link-wrap{
+		position: relative;
+		top: 25%;
+
+		@include transition(all, 0.25s);
+	}
+
+	@include up-to-medium{
+		.your-ref-link{
+			height: 130px !important;
+			@include transition(all, 0.25s);
+		}	
+
+		.link-wrap{
+			margin-top: 25px;
+			top: 0;
+		}
+	}
+}
+
+.your-vouchers{
+
+	.cell-1{
+		width: 20px;
+	}
+	.cell-2{
+		width: auto;
+	}
+	.cell-3{
+		width: 15%;
+	}
+	.cell-4{
+		width: 10%;
+	}
+	em{
+		font-size: 20px;
+		font-weight: 700;
+		font-style: normal;
+		color: $color-green;
+	}
+
+	@include up-to-medium{
+
+		.cell-3,
+		.cell-4{
+			width: 17.5%;
+		}
+
+		.cell-2 span,
+		.cell-3 span,
+		.cell-4 span{
+			display: none;
+		}
+	}
+}
+
+.your-referrals{
+
+	.t-row{
+		table-layout: fixed;
+	}
+
+	.cell-1{
+		width: 20px;
+	}
+	.cell-2{
+		width: auto;
+		overflow: hidden;
+	}
+	.cell-3{
+		width: 12.5%;
+
+		em{
+			font-size: 20px;
+			font-weight: 700;
+			font-style: normal;
+			color: $color-green;
+		}
+	}
+	.cell-4{
+		width: 25%;
+	}
+	.cell-5{
+		width: 12.5%;
+	}
+	.cell-6{
+		width: 12.5%;
+	}
+
+	@include up-to-desktop{
+		.cell-3,
+		.cell-5,
+		.cell-6{
+			width: 8%;
+		}
+
+		.cell-2 span,
+		.cell-3 span,
+		.cell-4 span,
+		.cell-5 span,
+		.cell-6 span{
+			display: none;
+		}
+	}
+
+	@include up-to-medium{
+		.cell-2,
+		.cell-3,
+		.cell-4,
+		.cell-5,
+		.cell-6{
+			display: block !important;
+			width: 100%;
+			border-top: none !important;
+			text-align: left !important;
+			min-height: 24px;
+		}
+
+		.cell-1{
+			border-top: none !important;
+		}
+		.cell-2{
+			border-top: 1px solid lighten($color-green, 35%) !important;
+			margin-top: 5px;
+			padding-top: 5px;
+		}
+		.t-row:first-child .cell-2{
+			border-top: none !important;
+			margin-top: 0;
+		}
+		.cell-3 em{
+			font-size: 14px;
+		}
+		
+		.cell-2 span,
+		.cell-3 span,
+		.cell-4 span,
+		.cell-5 span,
+		.cell-6 span{
+			display: inline;
+		}	
+	}
+}

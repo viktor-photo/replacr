@@ -1,0 +1,42 @@
+.register{
+	background: url('../img/chameleon-side.jpg') no-repeat right -50px $color-light-green;
+
+	@include transition(all, 0.25s);
+
+	@include up-to-widescreen{
+		background-position: 135% -50px;
+	}
+
+	@include up-to-desktop{
+		background-image: none;
+	}
+
+	.widget{
+
+		position: relative;
+		padding: 100px 0;
+
+		@include up-to-tablet{
+			padding: 60px 0 120px;
+		}
+
+		h1{
+			font-size: 36px;
+			font-weight: 300;
+			margin-bottom: 2rem;
+
+			.icon-logo{
+				position: relative;
+				top: 0.25rem;
+			}
+
+			@include up-to-desktop{
+				font-size: 30px;
+			}
+
+			@include up-to-tablet{
+				font-size: 26px;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+footer{
+	background: $color-navy;
+	color: $color-green;
+	position: relative;
+	padding: 2.5rem 0 2rem;
+	z-index: 10;
+
+	&.white-footer{
+		background: $color-white;
+	}
+
+	@include up-to-desktop{
+		padding: 2.25rem 0 2rem;
+	}
+
+	@include up-to-tablet{
+		padding: 1.75rem 0 1.5rem;
+	}
+
+	@include up-to-smartphone{
+		padding: 1.25rem 0 1rem;
+	}
+
+	.logo-wrap{
+		position: relative;
+		display: block;
+
+		@include transition(all, 0.25s);
+
+		@include up-to-medium{
+			display: table;
+			margin: 0 auto 1rem;
+		}
+	}
+
+	@import "footer/logo";
+
+	@import "footer/copyright";
+
+	@import "footer/footer-menu";
+}

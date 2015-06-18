@@ -1,0 +1,199 @@
+.balance-widget{
+	display: block;
+	position: relative;
+	padding: 1.25rem;
+	margin-bottom: 3.5rem;
+	font-family: $main-font-family;
+	overflow: hidden;
+
+	@include up-to-tablet{
+		margin-bottom: 2.5rem;
+	}
+
+	@include up-to-smartphone{
+		padding: 1.25rem 1rem;
+		margin-bottom: 2rem;
+	}
+	
+	&:before{
+		font-family: replacr;
+		content: "\e60b";
+		font-size: 220px;
+		line-height: 1em;
+		font-weight: normal;
+		position: absolute;
+		left: 47.5%;
+		top: -55px;
+
+		@include transition(all, 0.25s);
+
+		@include up-to-desktop{
+			font-size: 180px;
+			top: -40px;
+		}
+
+		@include up-to-medium{
+			font-size: 120px;
+			top: -20px;
+		}
+
+		@include up-to-smartphone{
+			left: 10px;
+			top: 50%;
+			font-size: 100px;
+			margin-top: -30px;
+			opacity: 0.75;
+		}
+	}
+
+	&.info{
+		background: $color-blue;
+
+		&:before{
+			color: lighten($color-blue, 7%);
+		}
+	}
+
+	&.alert{
+		background: $color-yellow;
+
+		&:before{
+			color: lighten($color-yellow, 7%);
+		}
+	}
+
+	&.error{
+		background: $color-red;
+
+		&:before{
+			color: lighten($color-red, 7%);
+		}
+	}
+
+	&.success{
+		background: $color-green;
+
+		&:before{
+			color: lighten($color-green, 7%);
+		}
+	}
+
+	.text-block{
+		display: table-cell;
+		vertical-align: middle;
+		float: left;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		@include up-to-smartphone{
+			width: 100%;
+			display: block;
+			float: none;
+			padding-bottom: 1rem;
+		}
+
+		.title{
+			font-size: 33px;
+			line-height: 1.15em;
+			display: block;
+			color: $color-white;
+			text-transform: uppercase;
+			letter-spacing: -0.025em;
+			
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 26px;
+			}
+
+			@include up-to-medium{
+				font-size: 18px;
+			}
+		}
+
+		.subtitle{
+			font-size: 20px;
+			line-height: 1.15em;
+			display: block;
+			color: $color-navy;
+			text-transform: uppercase;
+			letter-spacing: -0.025em;
+			
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 16px;
+			}
+
+			@include up-to-medium{
+				font-size: 11px;
+			}
+		}
+		p{
+			font-size: 14px;
+			display: block;
+			margin: 0;
+
+			@include up-to-medium{
+				font-size: 11px;
+			}
+		}
+
+		a{
+			color: $color-white;
+		}
+	}
+
+	.current-balance{
+		display: table-cell;
+		vertical-align: middle;
+		float: right;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		@include up-to-smartphone{
+			width: 100%;
+			display: block;
+			float: none;
+		}
+
+		.amount{
+			font-size: 60px;
+			font-weight: 300;
+			line-height: 1em;
+			display: block;
+			color: $color-white;
+			
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 40px;
+				padding-top: 5px;
+			}
+
+			@include up-to-medium{
+				font-size: 26px;
+			}
+		}
+
+		.amount-desc{
+			font-size: 14px;
+			line-height: 1em;
+			text-transform: uppercase;
+			color: $color-navy;
+			letter-spacing: -0.025em;
+
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 12px;
+			}
+
+			@include up-to-medium{
+				font-size: 10px;
+			}
+		}
+	}
+}

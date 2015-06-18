@@ -1,0 +1,10 @@
+.splash{
+
+	min-height: 100%;
+	width: 100%;
+	display: block;
+
+	&.temp-bg{
+		background: url('../img/splash-screen.jpg') no-repeat center top;
+	}
+}

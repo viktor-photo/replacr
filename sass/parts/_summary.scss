@@ -1,0 +1,89 @@
+.activity-summary{
+	font-size: $initial-size;
+
+	.chart-legend,
+	.chart-period{
+		position: absolute;
+		top: 0;
+
+		@include up-to-desktop{
+			position: relative;
+		}
+		@include up-to-medium{
+			display: table;
+			margin: 10px auto;
+		}
+	}
+	.chart-legend{
+		left: 0;
+
+		@include up-to-desktop{
+			float: left;
+		}
+		@include up-to-medium{
+			float: none;
+		}
+
+		span{
+			display: inline-block;
+			margin-right: 20px;
+			padding-left: 12px;
+			position: relative;
+			cursor: pointer;
+
+			@include up-to-medium{
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+
+		.dot{
+			display: inline;
+			width: 7px;
+			height: 7px;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 5px;
+			border-radius: 50%;
+
+			&.green{
+				background: $color-green;
+			}
+			&.blue{
+				background: $color-blue;
+			}
+			&.red{
+				background: $color-red;
+			}
+		}
+	}
+	.chart-period{
+		right: 0;
+
+		@include up-to-desktop{
+			float: right;
+		}
+		@include up-to-medium{
+			float: none;
+		}
+
+		span{
+			color: $color-grey;
+			display: inline-block;
+			margin-left: 20px;
+			cursor: pointer;
+
+			@include up-to-medium{
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+
+			&.active{
+				color: $color-green;
+			}
+		}
+	}
+}

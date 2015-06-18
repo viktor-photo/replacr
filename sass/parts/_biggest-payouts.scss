@@ -1,0 +1,150 @@
+.biggest-payout{
+	position: relative;
+
+	.place{
+		position: relative;
+		border-style: solid;
+		border-width: 1px;
+
+		&.gold{
+			border-color: $color-yellow;
+
+			.head{
+				background-color: $color-yellow;
+
+				.desc{
+					padding-left: 2.25rem;
+
+					@include up-to-tablet{
+						padding-left: 1.5rem;
+					}
+				}
+			}
+		}
+		&.silver{
+			border-color: $color-silver;
+
+			.head{
+				background-color: $color-silver;
+			}
+		}
+		&.bronze{
+			border-color: $color-bronze;
+
+			.head{
+				background-color: $color-bronze;
+			}
+		}
+
+		.head{
+			color: $color-white;
+			padding: 0.825rem;
+
+			span{
+				display: block;
+			}
+
+			.num{
+				font-size: 90px;
+				line-height: 1em;
+				font-weight: 100;
+				position: absolute;
+				top: 0.5rem;
+				left: 0.5rem;
+
+				@include up-to-tablet{
+					font-size: 48px;
+				}
+			}
+
+			.desc{
+				padding: 1rem 0 0 3rem;
+
+				@include up-to-tablet{
+					padding: 0.25rem 0 0 1.75rem;
+					font-size: 10px;
+				}
+			}
+
+			.amount{
+				font-size: 38px;
+				line-height: 1em;
+				text-align: right;
+				font-weight: 300;
+				letter-spacing: -0.025em;
+
+				@include up-to-tablet{
+					font-size: 22px;
+				}
+			}
+
+			.legend{
+				font-size: 10px;
+				color: $color-navy;
+			}
+		}
+
+		.inner{
+			position: relative;
+			padding: 0.825rem;
+
+			& > div{
+				padding: 0.675rem 0;
+				border-bottom: 1px solid lighten($color-green, 35%);
+
+				@include up-to-tablet{
+					padding: 0.425rem 0;
+				}
+
+				&:first-child{
+					padding-top: 0;
+				}
+
+				&:last-child{
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+
+			}
+
+			.row-title{
+				color: $color-grey;
+				text-align: left;
+				display: inline-block;
+			}
+
+			strong{
+				float: right;
+				display: inline-block;
+			}
+
+			.icon{
+				display: block;
+				height: 20px;
+				text-indent: 100%;
+				overflow: hidden;
+				min-width: 80px;
+
+				&.paypal{
+					background: url('../img/icons/payment/paypal.png') no-repeat right center;
+					background-size: auto 100%;
+				}
+
+				&.bitcoin{
+					background: url('../img/icons/payment/bitcoin.png') no-repeat  right center;
+					background-size: auto 100%;
+				}
+
+				&.sepa{
+					background: url('../img/icons/payment/sepa.png') no-repeat  right center;
+					background-size: auto 100%;
+				}
+
+				&.wire{
+					background: url('../img/icons/payment/wire.png') no-repeat  right center;
+					background-size: auto 100%;
+				}
+			}
+		}
+	}
+}

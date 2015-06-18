@@ -1,0 +1,71 @@
+#menu-trigger-wrap{
+	height: 50px;
+	line-height: 50px;
+	padding: 1.35rem 0.625rem;
+	margin: 0 0.25rem 0 1.5rem;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	background: rgba(255,255,255,0);
+	
+	@include transition(all, 0.2s);
+
+	@include up-to-medium{
+		margin: 0 0.25rem 0 0.5rem
+	};
+
+	@include up-to-smartphone{
+		padding: 1.35rem 0.325rem;
+	};
+
+	span{
+		width: 18px;
+		height: 5px;
+		display: block;
+		position: relative;
+		border-top: 1px solid $color-blue;
+		border-bottom: 1px solid $color-blue;
+		
+		&:before,
+		&:after{
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: $color-blue;
+			position: absolute;
+			right: 0;
+		}
+		
+		&:before{
+			top: -5px;
+		}
+		&:after{
+			bottom: -5px;
+		}
+
+		i{
+			width: 0px;
+			height: 1px;
+			background: $color-blue;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 1px;
+		}
+	}
+
+	&.active{
+		
+		background: rgba(255,255,255,0.05);
+
+		span{
+			border-color: $color-green;
+		
+			&:before,
+			&:after{
+				background: $color-green;
+			}
+		}
+	}
+}

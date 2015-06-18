@@ -1,0 +1,173 @@
+.price-plans-table{
+
+}
+
+.tier{
+	position: relative;
+
+	.tier-name{
+
+		line-height: 40px;
+		cursor: pointer;
+		border-top: 1px solid lighten($color-green, 35%);
+
+		@include transition(all, 0.25s);
+
+		.cell-1{
+			width: 100px;
+			text-transform: uppercase;
+			font-size: 14px;
+
+			i.icon{
+				display: inline-block;
+				width: 24px;
+				font-family: replacr;
+				font-style:	normal;
+				font-size: 16px;
+				line-height: 1em;
+				position: relative;
+				margin-left: 10px;
+				top: 2px;
+
+				&:before{
+					content: '\e621';
+					color: $color-green;
+				}
+			}
+		}
+
+		.cell-2{
+			width: auto;
+			font-size: 14px;
+		}
+
+		.cell-3{
+			width: 120px;
+		}
+
+		&.active{
+			background: $color-white;
+
+			i.icon:before{
+				content: '\e620';
+				opacity: 0.5;
+			}
+		}
+
+		&.worldwide{
+
+			.cell-1{
+				width: auto;
+
+				label{
+					top: 10px;
+					margin-left: 10px;
+				}
+			}
+			.cell-2{
+				width: auto;
+				text-align: center;
+			}
+			.cell-3{
+				width: auto;
+			}
+		}
+	}
+
+	.tier-content{
+		display: none;
+		padding: 20px 0;
+		font-size: $initial-size;
+		border-top: 1px solid lighten($color-green, 35%);
+
+		.t-row:nth-child(2n){
+			background: #fff;
+		}
+
+		.t-row{
+
+			.cell-2{
+				opacity: 0;
+
+				@include transition(all, 0.15s);
+			}
+
+			&:hover,
+			&.active{
+				.cell-2{
+					opacity: 1;
+				}
+			}
+
+			&.check-all label{
+				top: 10px;
+				left: 10px;
+			}
+		}
+
+		.cell-1{
+			width: 35%;
+
+			@include up-to-tablet{
+				width: 30%;
+			}
+
+			.flag{
+				margin-left: 10px;
+				padding-left: 24px;
+				display: block;
+				position: relative;
+			}
+		}
+		.cell-2{
+			width: 35%;
+
+			@include up-to-tablet{
+				width: 30%;
+			}
+
+			span{
+				margin-left: 10px;
+			}
+		}
+		.cell-3{
+			width: 15%;
+			text-align: right;
+
+			@include up-to-tablet{
+				width: 20%;
+			}
+		}
+		.cell-4{
+			width: 15%;
+
+			@include up-to-tablet{
+				width: 20%;
+			}
+
+			span{
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&:first-of-type{
+		.tier-name{
+			border-top: none;
+		}
+	}
+
+	label.input{
+		display: inline;
+		margin: 0;
+	}
+
+	input[type="text"]{
+		height: 24px;
+		line-height: 24px;
+		display: inline;
+		margin: 0 0 0 10px;
+		width: 80px;
+		text-align: left;
+	}
+}

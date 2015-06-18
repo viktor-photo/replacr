@@ -1,0 +1,1467 @@
+<!doctype html>
+<!--[if IE 8]><html lang="pl" class="no-js lt-ie10 lt-ie9 ie8 ie" ng-app='App'> <![endif]-->
+<!--[if IE 9]><html lang="pl" class="no-js lt-ie10 ie9 ie" ng-app='App'> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="pl" class="no-js" ng-app='App'> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<title>repla.cr</title>
+		<meta name="description" content="Project description">
+		<script src="js/vendor/modernizr.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header" role="banner">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="logo left">
+						<a href="#" title="repla.cr">repla.cr</a>
+					</h1>
+
+					<div id="menu-trigger-wrap" class="left">
+						<span title="Menu"><i></i></span>
+					</div>
+
+					<div id="settings-link" class="left">
+						<span class="icon-settings"></span>
+					</div>
+
+					<div id="shorten-url-form" class="left">
+						<i class="icon-url"></i>
+						<span class="legend">Paste a long url link</span>
+						<form action="" id="shorten-url">
+							<input type="text">
+						</form>
+					</div>
+
+					<div class="account-settings right clearfix">
+						<div class="lang-select">
+							<span class="legend">Preferred language:</span>
+							<select name="" id="language">
+								<option value="1" data-icon="en">en</option>
+								<option value="2" data-icon="pl">pl</option>
+								<option value="3" data-icon="ru">ru</option>
+								<option value="4" data-icon="de">de</option>
+								<option value="5" data-icon="nl">nl</option>
+								<option value="6" data-icon="sp">sp</option>
+								<option value="7" data-icon="he">he</option>
+								<option value="8" data-icon="es">es</option>
+								<option value="9" data-icon="fr">fr</option>
+								<option value="10" data-icon="hi">hi</option>
+								<option value="11" data-icon="ar">ar</option>
+								<option value="12" data-icon="ch">ch</option>
+							</select>
+						</div>
+						<div class="prefs">
+							<a href="#" title="Settings">
+								<i class="icon-settings"></i>
+								<span>Settings</span>
+							</a>
+						</div>
+						<div class="logout-link">
+							<a href="#" title="logout">
+								<i class="icon-logout"></i>
+								<span>Logout</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div id="content">
+			<div class="row collapse">
+
+				<div class="content-flex-wrap">
+
+					<!-- Aside section -->
+					<aside id="sidebar" class="wide">
+						<div class="clearfix">
+
+							<div class="profile-header">
+								<a class="profile-avatar" href="#">
+									<img src="img/profile-default-avatar.png" alt="Profile Avatar" />
+								</a>
+
+								<div class="profile-info">
+									<div class="greeting">
+										<span><strong>Hello </strong>Janosh</span>
+									</div>
+									<div class="level">
+										<span>lvl <i>1</i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="account-stats">
+								<h5>Account Stat's</h5>
+								<div class="stats-table">
+									<div class="t-row">
+										<strong>2.14570$</strong>
+										<span>Current balance</span>
+									</div>
+									<div class="t-row">
+										<strong>1.33700$</strong>
+										<span>Total Earned - Clicks</span>
+									</div>
+									<div class="t-row">
+										<strong>0.80870$</strong>
+										<span>Total Earned - Referral</span>
+									</div>
+									<div class="t-row">
+										<strong>6</strong>
+										<span>URLs</span>
+									</div>
+									<div class="t-row">
+										<strong>702</strong>
+										<span>Clicks</span>
+									</div>
+								</div>
+							</div>
+
+							<ul class="sidebar-menu">
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-9"></i>
+										<span>g!center</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="" class="current">
+										<i class="icon icon-8"></i>
+										<span>Payout</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-7"></i>
+										<span>Website scripts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-6"></i>
+										<span>Referral System</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-5"></i>
+										<span>Referral Rallye</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-4"></i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-3"></i>
+										<span>Archive</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-2"></i>
+										<span>Last 15 User Payouts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-1"></i>
+										<span>GCa.sh Forum</span>
+									</a>
+								</li>
+							</ul>
+
+							<!-- Hello Block -->
+							<div class="hello-block">
+
+								<!-- Skype block -->
+								<div class="skype">
+									<a href="#" title="">
+										<span class="block-wrap">
+											<i class="icon-skype"></i>
+											<span class="text">
+												<em class="q">Questions?</em> Contact support<br />Or add manually: <em>nk-gcash</em>
+											</span>
+										</span>
+										<span class="skype-footer">Write a message or call</span>
+									</a>
+								</div>
+
+								<!-- Write a ticket -->
+								<div class="write-ticket">
+									<a href="#" title="">
+										<i class="icon-new-message"></i>
+										<span class="block-wrap v-align">
+											<span class="title">Something unusual?</span>
+											<span class="subtitle">write a ticket</span>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</aside>
+
+					<!-- Main content section -->
+					<main id="main">
+						<div class="row collapse">
+							<div class="small-12 columns">
+
+								<article>
+									<div class="header pt mb20">
+										<h4>Advertising rates</h4>
+										<!-- <span class="subheader"></span> -->
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<ul class="submenu align-center mb30">
+												<li class="active"><a href="#" title="">Interstitial Advertising</a></li><li><a href="#" title="">Leaderboard Banner Advertising</a></li><li><a href="#" title="">Pop Ad Advertising</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<p class="mb20"><strong>Please find our advertising rate table below. Each visitor you will purchase from <a href="#">repla.cr</a> will meet the following criteria:</strong></p>
+										</div>
+									</div>
+										
+									<div class="row">
+										<div class="small-12 medium-6 columns">
+											<ul class="zebra">
+												<li>Unique within a 24 hour time frame</li>
+												<li>They will have JavaScript enabled</li>
+												<li>They will have Cookies enabled</li>
+											</ul>
+										</div>
+
+										<div class="small-12 medium-6 columns">
+											<ul class="zebra inverted">
+												<li>Must view your website for at least 5 seconds</li>
+												<li>Anonymous proxy filtered against a massive daily updated list</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<p class="mt30 mb30"><strong>Please find our advertising rate table below. Each visitor you will purchase from <a href="#">repla.cr</a> will meet the following criteria:</strong></p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<section class="widget has-table border light-green light-green-bg mb30">
+												<div class="header mb0">
+													<h4>Price plan's</h4>
+												</div>
+												<div class="price-plans-table">
+
+													<div class="tier">
+														<div class="t-row tier-name">
+															<div class="cell-1">
+																<i class="icon"></i>Tier 1
+															</div>
+															<div class="cell-2">
+																<strong class="tier-desc uppercase color-green">1/2 price sale!</strong>
+															</div>
+															<div class="cell-3 text-right">
+																<span class="color-grey inline">price</span>
+																<strong class="color-green size-16 mr10">3$</strong>
+															</div>
+														</div>
+														<div class="tier-content">
+															<form action="" class="green-brdr">
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag germany">Germany</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-1" class="input">Order: </label>
+																			<input type="text" id="order-k-1">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">de</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag poland">Poland</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-2" class="input">Order: </label>
+																			<input type="text" id="order-k-2">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">pl</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag israel">Izrael</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-3" class="input">Order: </label>
+																			<input type="text" id="order-k-3">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">iz</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag spain">Spain</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-4" class="input">Order: </label>
+																			<input type="text" id="order-k-4">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">esp</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag uk">United Kingdom</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-5" class="input">Order: </label>
+																			<input type="text" id="order-k-5">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">uk</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag france">France</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-6" class="input">Order: </label>
+																			<input type="text" id="order-k-6">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">fr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag italy">Italy</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-7" class="input">Order: </label>
+																			<input type="text" id="order-k-7">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">it</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag china">China</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-8" class="input">Order: </label>
+																			<input type="text" id="order-k-8">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">ch</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag greece">Greece</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-9" class="input">Order: </label>
+																			<input type="text" id="order-k-9">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">gr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag belgium">Belgium</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-10" class="input">Order: </label>
+																			<input type="text" id="order-k-10">
+																			<span class="sfx">bl</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">bg</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag usa">United States</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-11" class="input">Order: </label>
+																			<input type="text" id="order-k-11">
+																			<span class="sfx">us</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">us</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row check-all">
+																	<div class="cell-1">
+																		<input type="checkbox" id="check-all">
+																		<label for="check-all" class="uppercase">all tier</label>
+																	</div>
+																	<div class="cell-2"></div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">all</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+																
+																<hr class="green mt0 mr0 ml0" />
+
+																<!-- Row -->
+																<div class="t-row">
+																	<button class="button green expand mb0"><strong>create a campaing</strong></button>
+																</div>
+															</form>	
+														</div>
+													</div>
+												
+													<div class="tier">
+														<div class="t-row tier-name active">
+															<div class="cell-1">
+																<i class="icon"></i>Tier 2
+															</div>
+															<div class="cell-2">
+																<strong class="tier-desc uppercase color-blue">limited availability</strong>
+															</div>
+															<div class="cell-3 text-right">
+																<span class="color-grey inline">price</span>
+																<strong class="color-green size-16 mr10">1.5$</strong>
+															</div>
+														</div>
+														<div class="tier-content">
+															<form action="" class="green-brdr">
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag germany">Germany</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-21" class="input">Order: </label>
+																			<input type="text" id="order-k-21">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">de</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag poland">Poland</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-22" class="input">Order: </label>
+																			<input type="text" id="order-k-22">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">pl</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag israel">Izrael</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-23" class="input">Order: </label>
+																			<input type="text" id="order-k-23">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">iz</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag spain">Spain</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-24" class="input">Order: </label>
+																			<input type="text" id="order-k-24">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">esp</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag uk">United Kingdom</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-25" class="input">Order: </label>
+																			<input type="text" id="order-k-25">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">uk</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag france">France</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-26" class="input">Order: </label>
+																			<input type="text" id="order-k-26">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">fr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag italy">Italy</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-27" class="input">Order: </label>
+																			<input type="text" id="order-k-27">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">it</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag china">China</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-28" class="input">Order: </label>
+																			<input type="text" id="order-k-28">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">ch</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag greece">Greece</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-29" class="input">Order: </label>
+																			<input type="text" id="order-k-29">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">gr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag belgium">Belgium</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-210" class="input">Order: </label>
+																			<input type="text" id="order-k-210">
+																			<span class="sfx">bl</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">bg</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag usa">United States</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-211" class="input">Order: </label>
+																			<input type="text" id="order-k-211">
+																			<span class="sfx">us</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">us</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row check-all">
+																	<div class="cell-1">
+																		<input type="checkbox" id="check-all-2">
+																		<label for="check-all-2" class="uppercase">all tier</label>
+																	</div>
+																	<div class="cell-2"></div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">all</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+																
+																<hr class="green mt0 mr0 ml0" />
+
+																<!-- Row -->
+																<div class="t-row">
+																	<button class="button green expand mb0"><strong>create a campaing</strong></button>
+																</div>
+															</form>	
+														</div>
+													</div>
+												
+													<div class="tier">
+														<div class="t-row tier-name">
+															<div class="cell-1">
+																<i class="icon"></i>Tier 3
+															</div>
+															<div class="cell-2">
+																<strong class="tier-desc uppercase color-yellow">special offer</strong>
+															</div>
+															<div class="cell-3 text-right">
+																<span class="color-grey inline">price</span>
+																<strong class="color-green size-16 mr10">0.5$</strong>
+															</div>
+														</div>
+														<div class="tier-content">
+															<form action="" class="green-brdr">
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag germany">Germany</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-31" class="input">Order: </label>
+																			<input type="text" id="order-k-31">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">de</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag poland">Poland</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-32" class="input">Order: </label>
+																			<input type="text" id="order-k-32">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">pl</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag israel">Izrael</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-33" class="input">Order: </label>
+																			<input type="text" id="order-k-33">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">iz</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag spain">Spain</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-34" class="input">Order: </label>
+																			<input type="text" id="order-k-34">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">esp</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag uk">United Kingdom</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-35" class="input">Order: </label>
+																			<input type="text" id="order-k-35">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">uk</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag france">France</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-36" class="input">Order: </label>
+																			<input type="text" id="order-k-36">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">fr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag italy">Italy</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-37" class="input">Order: </label>
+																			<input type="text" id="order-k-37">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">it</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag china">China</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-38" class="input">Order: </label>
+																			<input type="text" id="order-k-38">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">ch</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag greece">Greece</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-39" class="input">Order: </label>
+																			<input type="text" id="order-k-39">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">gr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag belgium">Belgium</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-310" class="input">Order: </label>
+																			<input type="text" id="order-k-310">
+																			<span class="sfx">bl</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">bg</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag usa">United States</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-311" class="input">Order: </label>
+																			<input type="text" id="order-k-311">
+																			<span class="sfx">us</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">us</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row check-all">
+																	<div class="cell-1">
+																		<input type="checkbox" id="check-all-3">
+																		<label for="check-all-3" class="uppercase">all tier</label>
+																	</div>
+																	<div class="cell-2"></div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">all</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+																
+																<hr class="green mt0 mr0 ml0" />
+
+																<!-- Row -->
+																<div class="t-row">
+																	<button class="button green expand mb0"><strong>create a campaing</strong></button>
+																</div>
+															</form>	
+														</div>
+													</div>
+												
+													<div class="tier">
+														<div class="t-row tier-name">
+															<div class="cell-1">
+																<i class="icon"></i>Tier 4
+															</div>
+															<div class="cell-2">
+																<strong class="tier-desc uppercase color-red">offer expired</strong>
+															</div>
+															<div class="cell-3 text-right">
+																<span class="color-grey inline">price</span>
+																<strong class="color-green size-16 mr10">0.25$</strong>
+															</div>
+														</div>
+														<div class="tier-content">
+															<form action="" class="green-brdr">
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag germany">Germany</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-41" class="input">Order: </label>
+																			<input type="text" id="order-k-41">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">de</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag poland">Poland</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-42" class="input">Order: </label>
+																			<input type="text" id="order-k-42">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">pl</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag israel">Izrael</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-43" class="input">Order: </label>
+																			<input type="text" id="order-k-43">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">iz</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag spain">Spain</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-44" class="input">Order: </label>
+																			<input type="text" id="order-k-44">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">esp</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag uk">United Kingdom</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-45" class="input">Order: </label>
+																			<input type="text" id="order-k-45">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">uk</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag france">France</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-46" class="input">Order: </label>
+																			<input type="text" id="order-k-46">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">fr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag italy">Italy</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-47" class="input">Order: </label>
+																			<input type="text" id="order-k-47">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">it</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag china">China</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-48" class="input">Order: </label>
+																			<input type="text" id="order-k-48">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">ch</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag greece">Greece</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-49" class="input">Order: </label>
+																			<input type="text" id="order-k-49">
+																			<span class="sfx">k</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">gr</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag belgium">Belgium</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-410" class="input">Order: </label>
+																			<input type="text" id="order-k-410">
+																			<span class="sfx">bl</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">bg</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row">
+																	<div class="cell-1">
+																		<span class="flag usa">United States</span>
+																	</div>
+																	<div class="cell-2">
+																		<div class="input-wrap">
+																			<label for="order-k-411" class="input">Order: </label>
+																			<input type="text" id="order-k-411">
+																			<span class="sfx">us</span>
+																		</div>
+																	</div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">us</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+
+																<!-- Row -->
+																<div class="t-row check-all">
+																	<div class="cell-1">
+																		<input type="checkbox" id="check-all-4">
+																		<label for="check-all-4" class="uppercase">all tier</label>
+																	</div>
+																	<div class="cell-2"></div>	
+																	<div class="cell-3">
+																		<span class="country-code uppercase">all</span>
+																	</div>
+																	<div class="cell-4 text-right">
+																		<strong class="color-green size-16">1,5$</strong>
+																		<span class="uppercase">cpm</span>
+																	</div>
+																</div>
+																
+																<hr class="green mt0 mr0 ml0" />
+
+																<!-- Row -->
+																<div class="t-row">
+																	<button class="button green expand mb0"><strong>create a campaing</strong></button>
+																</div>
+															</form>	
+														</div>
+													</div>
+
+													<div class="tier">
+														<form action="" class="green-brdr">
+															<div class="t-row tier-name worldwide">
+																<div class="cell-1">
+																	<input type="checkbox" id="worldwide">
+																	<label for="worldwide" class="uppercase">Worlwide</label>
+																</div>
+																<div class="cell-2">
+																	<label for="expected-traffic" class="input">expected traffic: </label>
+																	<input type="text" id="expected-traffic">
+																</div>
+																<div class="cell-3 text-right">
+																	<span class="color-grey inline">price</span>
+																	<strong class="color-green size-16 mr10">1$</strong>
+																</div>
+															</div>
+														</form>	
+													</div>
+
+												</div>
+											</section>
+
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<p><strong>Your order may be subject to VAT if your country of residence is in the European Union (EU).</strong></p>
+											<p><strong>There is a minimum PayPal deposit of $5.00 and all sites/banners are allowed, except when they contain: </strong></p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 medium-6 columns">
+											<ul class="zebra">
+												<li>Frame breaking script</li>
+												<li>Automatically attempt to download software or change any user settings</li>
+												<li>Warez or Software Piracy related</li>
+												<li>Hacking Related</li>
+												<li>An repla.cr link, you cannot advertise adf.ly links on adf.ly</li>
+											</ul>
+										</div>
+
+										<div class="small-12 medium-6 columns">
+											<ul class="zebra inverted">
+												<li>Popup any windows on entry or exit of any kind</li>
+												<li>Adult or Pornographic related</li>
+												<li>Hate, Bigotry, and/or Intolerance</li>
+												<li>Music Piracy Related</li>
+												<li>Anything related to illegal activity</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<p class="mt30"><strong>Please <a href="#">contact us</a> first if you are unsure whether your advertising would be suitable. </strong></p>
+										</div>
+									</div>
+
+								</article>
+
+							</div>
+						</div>
+					</main>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" role="contentinfo">
+			<div class="row">
+				<div class="small-12 medium-4 columns">
+					<div class="logo-wrap">
+						<a href="#" class="logo" title="repla.cr">repla.cr</a>
+						<span class="copyright">2015 © repla.cr </span>
+					</div>
+				</div>
+				<div class="small-12 medium-8 columns">
+					<nav>
+						<a href="#" title="Home" class="current">Home</a>
+						<a href="#" title="Datenschutz">Datenschutz</a>
+						<a href="#" title="Impressum">Impressum</a>
+						<a href="#" title="AGB">AGB</a>
+						<a href="#" title="developer">developer</a>
+						<a href="#" title="Monetize Your Website">Monetize Your Website</a>
+						<a href="#" title="Contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/fancySelect.min.js"></script>
+		<script src="js/vendor/fastclick.js"></script>
+		<script src="js/vendor/placeholder.js"></script>
+		<script src="js/vendor/tipso.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

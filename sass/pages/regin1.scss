@@ -1,0 +1,176 @@
+.regin1{
+	position: relative;
+	font-family: $main-font-family;
+
+	.large-chameleon{
+		position: absolute;
+		display: block;
+		top: 50px;
+		left: -110px;
+		width: 756px;
+		height: 474px;
+		background: url('../img/chameleon.png') no-repeat center top;
+		background-size: 100% auto;
+		
+		@include transition(all, 0.25s);
+
+		@include up-to-widescreen{
+			width: 650px;
+		}
+		@include up-to-desktop{
+			width: 550px;
+		}
+		@include up-to-tablet{
+			width: 380px;
+			left: -70px;
+		}
+		@include up-to-medium{
+			width: 300px;
+			left: -50px;
+			top: 20px;
+		}
+		@include up-to-smartphone{
+			width: 200px;
+			top: 10px;
+		}
+	}
+
+	.highlights{
+		position: relative;
+		font-size: $initial-size;
+		width: 365px;
+		padding: 320px 0 0;
+		margin-left: 190px;
+
+		@include up-to-desktop{
+			width: 300px;
+			padding-top: 250px;
+			margin-left: 130px;
+		}
+
+		@include up-to-tablet{
+			width: 260px;
+			padding-top: 190px;
+			margin-left: 60px;
+
+			span br{
+				display: none;
+			}
+		}
+
+		@include up-to-medium{
+			float: right;
+			width: 230px;
+			padding-top: 40px;
+		}
+
+		@include up-to-smartphone{
+			padding-top: 80px;
+			margin-left: 0;
+		}
+		
+		@include transition(all, 0.25s);
+		
+		.h1-block{
+			position: relative;
+			float: right;
+			margin: 0 0 20px;
+
+			h1{
+				font-weight: 100;
+				font-size: 40px;
+				
+				@include transition(all, 0.25s);
+				
+				@include up-to-desktop{
+					font-size: 30px;
+				}
+
+				@include up-to-tablet{
+					font-size: 20px;
+				}
+			}
+		}
+		
+		.h2-block{	
+			position: relative;
+			clear: both;
+			
+			h2{
+				font-weight: 300;
+				font-size: 30px;
+				
+				@include transition(all, 0.25s);
+				
+				@include up-to-desktop{
+					font-size: 20px;
+				}
+
+				@include up-to-tablet{
+					font-size: 14px;
+				}
+			}
+		}
+
+		.h3-block{
+			position: relative;
+			left: -70px;
+
+			@include up-to-tablet{
+				left: -20px;				
+			}
+
+			@include up-to-medium{
+				left: -50px;
+			}
+
+			h3{
+				font-weight: 400;
+				font-size: 24px;
+				
+				@include transition(all, 0.25s);
+				
+				@include up-to-desktop{
+					font-size: 14px;
+				}
+			}
+		}	
+	}
+
+	.small-12.end{
+		h2{
+			padding-top: 170px;
+			font-size: 34px;
+			font-weight: 300;
+			letter-spacing: -0.0125em;
+
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 24px;
+				padding-top: 120px;
+			}
+			
+			@include up-to-tablet{
+				font-size: 18px;
+				padding-top: 40px;
+			}
+
+			@include up-to-medium{
+				font-size: 16px; 
+				br{
+					display: none;
+				}
+			}
+		}
+		h4{
+			font-size: 15px;
+
+			@include transition(all, 0.25s);
+
+			@include up-to-desktop{
+				font-size: 12px;
+			}
+		}
+	}
+}	

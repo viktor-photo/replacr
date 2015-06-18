@@ -1,0 +1,15 @@
+header{
+	background: $color-navy;
+	color: $color-white;
+	font-family: $secondary-font-family;
+	position: relative;
+	height: 50px;
+	z-index: 10;	
+}
+
+@import "header/logo";
+@import "header/menu-trigger";
+@import "header/settings-link";
+@import "header/shorten-url-form";
+@import "header/account-settings";
+@import "header/lang-select";

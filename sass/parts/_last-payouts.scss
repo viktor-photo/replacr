@@ -1,0 +1,131 @@
+.last-payouts{
+	position: relative;
+	padding: 70px 0;
+
+	@include up-to-tablet{
+		padding: 30px 0;
+	}
+
+	h2{
+		font-size: 40px;
+		font-weight: 300;
+
+		@include up-to-tablet{
+			font-size: 24px;
+		}
+	}
+
+	h3{
+		font-size: 14px;
+		margin-bottom: 60px;
+
+		@include up-to-tablet{
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+	}
+	
+	.biggest-payout{
+		position: relative;
+		margin-bottom: 80px;
+
+		@include up-to-tablet{
+			margin-bottom: 50px;
+		}
+
+		@include up-to-medium{
+			margin-bottom: 20px;
+		}
+	}
+
+	.place{
+		font-size: 14px;
+		border: 1px solid lighten($color-green, 35%);
+
+		@include up-to-desktop{
+			font-size: 12px;
+		}
+
+		@include up-to-tablet{
+			font-size: 11px;
+		}
+
+		@include up-to-medium{
+			font-size: 12px;
+			margin-bottom: 1rem;
+		}
+
+		.head{
+			position: relative;
+			padding: 1.5rem 1.25rem 0.5rem;
+
+			@include up-to-desktop{
+				padding: 1rem 1rem 0.5rem;
+			}
+
+			@include up-to-tablet{
+				padding: 0.65rem 0.5rem 0;
+			}
+
+			@include up-to-medium{
+				padding: 1rem 1rem 0.5rem;
+			}
+
+			.desc{
+				color: $color-navy;
+				padding: 1.5rem 0 0 0;
+
+				@include up-to-desktop{
+					padding: 1.2rem 0 0 0;
+				}
+				@include up-to-tablet{
+					padding: 0.5rem 0 0 0;
+				}
+			}
+
+			.amount{
+				color: $color-green;
+				font-size: 46px;
+
+				@include up-to-desktop{
+					font-size: 36px;
+				}
+
+				@include up-to-tablet{
+					font-size: 20px;
+					font-weight: 400;
+				}
+			}
+		}
+
+		.inner{
+			padding: 1.25rem;
+
+			@include up-to-desktop{
+				padding: 1rem;
+			}
+
+			@include up-to-tablet{
+				padding: 0.5rem;
+			}
+
+			@include up-to-medium{
+				padding: 1rem;
+			}
+
+			strong{
+				font-weight: 400;
+			}
+
+			.icon{
+				height: 25px;
+				min-width: 95px;
+
+				@include up-to-tablet{
+					height: 18px;
+					min-width: 70px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.lang-select{
+	position: relative;
+
+	span.legend{
+		position: relative;
+
+		@include up-to-tablet{
+			display: none;
+		}
+	}
+	
+	div.fancy-select{
+
+		.trigger{
+
+			@include transition(background, 0.25s);
+
+			@include up-to-smartphone{
+				padding: 0;
+				text-align: center;
+				width: 1.75rem;
+
+				&:before{
+					display: none;
+				}
+			}
+
+			&.open{
+				background: rgba(255,255,255,0.075);
+			}
+			
+			span{
+
+				@include up-to-smartphone{
+					padding-top: 12px;
+					height: 50px;
+					font-size: 11px;
+					display: block;
+				}
+
+			}
+
+			span[class^="trigger"]:before{
+				content: '';
+				width: 16px;
+				height: 12px;
+				display: block;
+				background: url('../img/icons/flags.png') no-repeat 0 0 transparent;
+				background-size: 100% auto;
+				position: absolute;
+				top: 50%;
+				left: 6px;
+				margin-top: -6px;
+
+				@include up-to-smartphone{
+					margin-top: 0;
+					top: 16px;
+				}	
+			}
+
+			span.trigger-en:before{background-position: 0 0;}
+			span.trigger-pl:before{background-position: 0 -12px;}
+			span.trigger-ru:before{background-position: 0 -24px;}
+			span.trigger-de:before{background-position: 0 -36px;}
+			span.trigger-nl:before{background-position: 0 -48px;}
+			span.trigger-sp:before{background-position: 0 -60px;}
+			span.trigger-he:before{background-position: 0 -72px;}
+			span.trigger-es:before{background-position: 0 -84px;}
+			span.trigger-fr:before{background-position: 0 -96px;}
+			span.trigger-hi:before{background-position: 0 -108px;}
+			span.trigger-ar:before{background-position: 0 -120px;}
+			span.trigger-ch:before{background-position: 0 -132px;}
+		}
+
+		.options{
+			min-width: 4.5rem;
+			padding: 0.375rem;
+			top: 2.625rem;
+			right: auto;
+			left: -0.75rem;
+			border: none;
+			border-radius: 3px;
+
+			@include up-to-smartphone{
+				top: 50px;
+			}
+
+			&:before{
+				bottom: 100%;
+				left: 1.625rem;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(210, 237, 252, 0);
+				border-bottom-color: #D2EDFC;
+				border-width: 4px;
+				margin-left: -4px;
+			}
+
+			li{
+				line-height: 1.825rem;
+				height: 1.825rem;
+				position: relative;
+				border-color: lighten($color-blue, 15%);
+
+				&.hover,
+				&.selected{
+					background: lighten($color-blue, 15%);
+				}
+				&.hover{
+					box-shadow: 0 0 0 1px rgba(255,255,255,0.25);
+				}
+				
+				span{
+					padding: 0 0 0 1.75rem;
+				}
+
+				i.lang-icon{
+					width: 16px;
+					height: 12px;
+					display: block;
+					background: url('../img/icons/flags.png') no-repeat 0 0 transparent;
+					background-size: 100% auto;
+					position: absolute;
+					left: 0.75rem;
+					top: 50%;
+					margin-top: -6px;
+				}
+
+				&:first-child i.lang-icon{ background-position: 0 0; }
+				&:nth-child(2) i.lang-icon{ background-position: 0 -12px; }
+				&:nth-child(3) i.lang-icon{ background-position: 0 -24px; }
+				&:nth-child(4) i.lang-icon{ background-position: 0 -36px; }
+				&:nth-child(5) i.lang-icon{ background-position: 0 -48px; }
+				&:nth-child(6) i.lang-icon{ background-position: 0 -60px; }
+				&:nth-child(7) i.lang-icon{ background-position: 0 -72px; }
+				&:nth-child(8) i.lang-icon{ background-position: 0 -84px; }
+				&:nth-child(9) i.lang-icon{ background-position: 0 -96px; }
+				&:nth-child(10) i.lang-icon{ background-position: 0 -108px; }
+				&:nth-child(11) i.lang-icon{ background-position: 0 -120px; }
+				&:nth-child(12) i.lang-icon{ background-position: 0 -132px; }
+			}
+		}
+	}
+}

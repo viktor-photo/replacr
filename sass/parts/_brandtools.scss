@@ -1,0 +1,95 @@
+.brandtools{
+	padding: 70px 0;
+
+	@include up-to-desktop{
+		padding: 50px 0;
+	}
+	@include up-to-tablet{
+		padding: 30px 0 10px;
+	}
+
+	h2{
+		font-size: 60px;
+		font-weight: 200;
+		letter-spacing: -0.0125em;
+
+		@include up-to-desktop{
+			font-size: 48px;
+		}
+
+		@include up-to-tablet{
+			font-size: 36px;
+		}
+
+		@include up-to-medium{
+			font-size: 20px;
+		}
+	}
+	
+	h3{
+		margin-bottom: 70px;
+		line-height: 1.5em;
+		font-weight: 400;
+
+		@include up-to-tablet{
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+		@include up-to-medium{
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.widget{
+		position: relative;
+		
+		.header{
+
+			@include up-to-smartphone{
+				margin-bottom: 10px;
+				padding-bottom: 5px;
+			}
+
+		}
+
+		img{
+			width: 64px;
+			height: 64px;
+			margin-bottom: 10px;
+
+			@include up-to-smartphone{
+				width: 48px;
+				height: 48px;
+			}
+		}
+
+		h4{
+			font-size: 18px;
+
+			@include up-to-smartphone{
+				font-size: 14px;
+			}
+		}
+
+		span{
+			max-width: 100%;
+			display: block;
+			line-height: 1.35em;
+			margin: 0 auto;
+
+			&.maxw-80{
+				max-width: 80%;
+			}
+
+			@include up-to-medium{
+				font-size: 12px;
+
+				&.maxw-80{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+
+}

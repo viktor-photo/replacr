@@ -1,0 +1,86 @@
+.trustworthy{
+	position: relative;
+	padding: 70px 0 60px;
+
+	@include up-to-tablet{
+		padding: 40px 0;
+	}
+
+	@include up-to-smartphone{
+		padding: 25px 0;
+	}
+
+	h2{
+		font-size: 40px;
+		font-weight: 300;
+
+		@include up-to-tablet{
+			font-size: 26px;
+		}
+		@include up-to-medium{
+			font-size: 20px;
+		}
+	}
+
+	h3{
+		margin: 40px 0 20px;
+
+		@include up-to-medium{
+			margin: 20px 0 10px;
+			font-size: 12px;
+		}
+	}
+
+	hr.green{
+		background: #2ecc71;
+		opacity: 0.5;
+
+		@include up-to-medium{
+			margin: 1rem 0;
+		}
+	}
+
+	p{
+		font-size: 16px;
+		font-weight: 400;
+		font-family: $main-font-family;
+
+		@include up-to-tablet{
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.75em;
+			display: block;
+
+			strong{
+				font-size: 16px;
+			}
+		}
+		@include up-to-smartphone{
+			font-size: 12px;
+
+			strong{
+				font-size: 14px;
+			}
+		}
+	}
+
+	.button{
+		padding: 0 2rem;
+	
+		@include up-to-smartphone{
+			padding: 0 1rem;
+			font-size: 12px;
+		}
+	}
+
+	.skype-logo{
+		width: 160px;
+		display: block;
+		height: auto;
+		margin: 0 auto;
+
+		@include up-to-medium{
+			width: 100px;
+		}
+	}
+}

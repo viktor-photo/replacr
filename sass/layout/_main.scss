@@ -1,0 +1,47 @@
+#main{
+	position: relative;
+	height: 100%;
+	font-size: $initial-size;
+	padding: 1.5rem 0 5rem 1.75rem;
+	overflow: hidden;
+	-webkit-box-flex: 1 100%;
+	-webkit-flex: 1 100%;
+	-ms-flex: 1 100%;
+	flex: 1 100%;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	-webkit-align-self: stretch;
+	-moz-align-self: stretch;
+	-ms-align-self: stretch;
+	align-self: stretch;
+
+	article{
+		position: relative;
+		min-width: 250px;
+
+		.header{
+			position: relative;
+			text-align: center;
+			display: block;
+
+			&.pt{
+				padding-top: 2rem;
+
+				@include up-to-tablet{
+					padding-top: 1rem;
+				}
+
+				@include up-to-smartphone{
+					padding-top: 0;
+				}
+			}
+
+			.subheader{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@import "main/widgets";
+@import "main/search-widget";

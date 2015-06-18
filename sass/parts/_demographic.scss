@@ -1,0 +1,58 @@
+.demographic{
+
+	font-size: $initial-size;
+	max-height: 350px;
+		
+	@include up-to-tablet{
+		min-height: 0;
+	}
+
+
+	.header{
+		position: relative;
+
+		span{
+			display: block;
+			font-size: 16px;
+			position: absolute;
+			top: 1px;
+			opacity: 0.5;
+			cursor: pointer;
+
+			@include transition(all, 0.25s);
+
+			&:hover{
+				opacity: 1;
+			}
+
+			&.icon-circle-plus{
+				left: 0;
+			}
+			&.icon-circle-minus{
+				right: 0;
+			}
+		}
+	}
+
+	.map-container{
+		position: relative;
+		width: 100%;
+		
+		@include up-to-tablet{
+			min-height: 0;
+		}
+
+		a{
+			display: block;
+			position: relative;
+
+			img{
+				display: block;
+				padding-top: 20px; 
+				margin: 0 auto;
+				max-height: 250px;
+			}
+
+		}
+	}
+}

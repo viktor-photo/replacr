@@ -1,0 +1,15 @@
+.search-widget{
+	position: relative;
+
+	form{
+		padding: 0.75rem 0;
+
+		@include up-to-tablet{
+			padding: 0.5rem 0;
+		}
+
+		@include up-to-smartphone{
+			padding: 0.25rem 0;
+		}
+	}
+}

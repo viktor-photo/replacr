@@ -1,0 +1,801 @@
+<!doctype html>
+<!--[if IE 8]><html lang="pl" class="no-js lt-ie10 lt-ie9 ie8 ie" ng-app='App'> <![endif]-->
+<!--[if IE 9]><html lang="pl" class="no-js lt-ie10 ie9 ie" ng-app='App'> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="pl" class="no-js" ng-app='App'> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<title>repla.cr</title>
+		<meta name="description" content="Project description">
+		<script src="js/vendor/modernizr.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header" role="banner">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="logo left">
+						<a href="#" title="repla.cr">repla.cr</a>
+					</h1>
+
+					<div id="menu-trigger-wrap" class="left">
+						<span title="Menu"><i></i></span>
+					</div>
+
+					<div id="settings-link" class="left">
+						<span class="icon-settings"></span>
+					</div>
+
+					<div id="shorten-url-form" class="left">
+						<i class="icon-url"></i>
+						<span class="legend">Paste a long url link</span>
+						<form action="" id="shorten-url">
+							<input type="text">
+						</form>
+					</div>
+
+					<div class="account-settings right clearfix">
+						<div class="lang-select">
+							<span class="legend">Preferred language:</span>
+							<select name="" id="language">
+								<option value="1" data-icon="en">en</option>
+								<option value="2" data-icon="pl">pl</option>
+								<option value="3" data-icon="ru">ru</option>
+								<option value="4" data-icon="de">de</option>
+								<option value="5" data-icon="nl">nl</option>
+								<option value="6" data-icon="sp">sp</option>
+								<option value="7" data-icon="he">he</option>
+								<option value="8" data-icon="es">es</option>
+								<option value="9" data-icon="fr">fr</option>
+								<option value="10" data-icon="hi">hi</option>
+								<option value="11" data-icon="ar">ar</option>
+								<option value="12" data-icon="ch">ch</option>
+							</select>
+						</div>
+						<div class="prefs">
+							<a href="#" title="Settings">
+								<i class="icon-settings"></i>
+								<span>Settings</span>
+							</a>
+						</div>
+						<div class="logout-link">
+							<a href="#" title="logout">
+								<i class="icon-logout"></i>
+								<span>Logout</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div id="content">
+			<div class="row collapse">
+
+				<div class="content-flex-wrap">
+
+					<!-- Aside section -->
+					<aside id="sidebar" class="wide">
+						<div class="clearfix">
+
+							<div class="profile-header">
+								<a class="profile-avatar" href="#">
+									<img src="img/profile-default-avatar.png" alt="Profile Avatar" />
+								</a>
+
+								<div class="profile-info">
+									<div class="greeting">
+										<span><strong>Hello </strong>Janosh</span>
+									</div>
+									<div class="level">
+										<span>lvl <i>1</i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="account-stats">
+								<h5>Account Stat's</h5>
+								<div class="stats-table">
+									<div class="t-row">
+										<strong>2.14570$</strong>
+										<span>Current balance</span>
+									</div>
+									<div class="t-row">
+										<strong>1.33700$</strong>
+										<span>Total Earned - Clicks</span>
+									</div>
+									<div class="t-row">
+										<strong>0.80870$</strong>
+										<span>Total Earned - Referral</span>
+									</div>
+									<div class="t-row">
+										<strong>6</strong>
+										<span>URLs</span>
+									</div>
+									<div class="t-row">
+										<strong>702</strong>
+										<span>Clicks</span>
+									</div>
+								</div>
+							</div>
+
+							<ul class="sidebar-menu">
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-9"></i>
+										<span>g!center</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="" class="current">
+										<i class="icon icon-8"></i>
+										<span>Payout</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-7"></i>
+										<span>Website scripts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-6"></i>
+										<span>Referral System</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-5"></i>
+										<span>Referral Rallye</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-4"></i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-3"></i>
+										<span>Archive</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-2"></i>
+										<span>Last 15 User Payouts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-1"></i>
+										<span>GCa.sh Forum</span>
+									</a>
+								</li>
+							</ul>
+
+							<!-- Hello Block -->
+							<div class="hello-block">
+
+								<!-- Skype block -->
+								<div class="skype">
+									<a href="#" title="">
+										<span class="block-wrap">
+											<i class="icon-skype"></i>
+											<span class="text">
+												<em class="q">Questions?</em> Contact support<br />Or add manually: <em>nk-gcash</em>
+											</span>
+										</span>
+										<span class="skype-footer">Write a message or call</span>
+									</a>
+								</div>
+
+								<!-- Write a ticket -->
+								<div class="write-ticket">
+									<a href="#" title="">
+										<i class="icon-new-message"></i>
+										<span class="block-wrap v-align">
+											<span class="title">Something unusual?</span>
+											<span class="subtitle">write a ticket</span>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</aside>
+
+					<!-- Main content section -->
+					<main id="main">
+						<div class="row collapse">
+							<div class="small-12 columns">
+
+								<article class="link-replacer">
+									<!-- <div class="header pt">
+										<h1 class="mb0">Page title</h1>
+										<span class="subheader">Subtitle</span>
+									</div> -->
+									
+									<div class="after-login row">
+										<div class="small-12 medium-4 columns">
+											<div class="current-balance widget border green mb20">
+												<div class="inner">
+													<span class="numbr">39.38$</span>
+													<span class="legend">current ballance</span>
+												</div>
+												<div class="inner">
+													<span class="numbr">29.38$</span>
+													<span class="legend">current ballance</span>
+												</div>
+												<div class="inner">
+													<span class="numbr">19.38$</span>
+													<span class="legend">current ballance</span>
+												</div>
+											</div>
+										</div>
+										<div class="small-12 medium-4 columns">
+											<div class="url-made widget border blue mb20">
+												<div class="inner">
+													<span class="numbr">66</span>
+													<span class="legend">url's you've made</span>
+												</div>
+												<a href="#" class="view-more icon-circle-arrow-right" title="View more">View more</a>
+											</div>
+										</div>
+										<div class="small-12 medium-4 columns">
+											<div class="total-clicks widget border green mb30">
+												<div class="inner">
+													<span class="numbr">443</span>
+													<span class="legend">total click's</span>
+												</div>
+												<a href="#" class="view-more icon-circle-arrow-right" title="View more">View more</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 column">
+											<div class="widget activity-summary border green mb30">
+												<div class="header clearfix ">
+													<h4>your activity summary</h4>
+													<div class="chart-legend">
+														<span><i class="dot green"></i>Click's</span>
+														<span><i class="dot blue"></i>Url's</span>
+														<span><i class="dot red"></i>Referral's</span>
+													</div>
+													<div class="chart-period">
+														<span>Today</span>
+														<span>Week</span>
+														<span class="active">Month</span>
+													</div>
+												</div>
+
+												<div class="chart-wrap">
+													<img src="img/chart.jpg" alt="Chart preview">
+												</div>
+											</div>	
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 large-8 columns">
+											<div class="widget recent-activity equal-1 border green mb30">
+												<div class="header mb10">
+													<h4>Recent Activities</h4>
+													<a href="#" class="realtime">Realtime</a>
+												</div>
+												<div class="activities-list">
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>Germany</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">1 hour ago</span>
+														</div>
+													</div>
+
+													<hr class="green mr0 ml0" />
+
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>Romania</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">2 hour ago</span>
+														</div>
+													</div>
+
+													<hr class="green mr0 ml0" />
+													
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>Bosnia and Herzegovina</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">6 hour ago</span>
+														</div>
+													</div>
+
+													<hr class="green mr0 ml0" />
+													
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>Malaysia</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">9 hour ago</span>
+														</div>
+													</div>
+
+													<hr class="green mr0 ml0" />
+													
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>United Kingdom</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">11 hour ago</span>
+														</div>
+													</div>
+
+													<hr class="green mr0 ml0" />
+													
+													<div class="t-row color-grey">
+														<div class="cell-1">
+															<i class="icon-pin color-green inline size-16 lh12"></i><p class="inline mb0">Someone from <strong>Italy</strong> referred by <a href="#">Gca.sh</a> visited <a href="#">My Files</a></p>
+														</div>
+														<div class="cell-2 text-right">
+															<span class="time">16 hour ago</span>
+														</div>
+													</div>
+												</div>
+											</div>	
+										</div>
+
+										<div class="small-12 large-4 columns">
+											<div class="widget demographic equal-1 border green mb30">
+												<div class="header">
+													<h4>Demographic</h4>
+													<span class="color-green icon-circle-plus"></span>
+													<span class="color-green icon-circle-minus"></span>
+												</div>
+												<div class="map-container">
+													<a href="#">
+														<img src="img/icons/map.png" alt="Map">
+													</a>	
+												</div>
+											</div>	
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="small-12 large-6 columns">
+											<div class="more-10 stats-widget blue-bg mb30">
+												<div class="inner text-center">
+													<h3>EARNED MORE THAN 10$?<span class="sub-title">&nbsp;</span></h3>
+													<p><strong>Join our Money Club</strong> and receive insight into <br />the best money making methods.</p>
+												</div>
+												<a href="#" class="view-more">Read more <i class="icon-circle-arrow-right"></i></a>
+											</div>
+										</div>
+
+										<div class="small-12 large-6 columns">
+											<div class="race-300 stats-widget green-bg mb30">
+												<div class="inner text-center">
+													<h3>300$ REFERRAL RALLYE!<span class="sub-title">Active until the 25/1/2015</span></h3>
+													<div class="row">
+														<div class="small-12 medium-4 columns">
+															<span>1st Price: <strong>135$</strong></span>
+															<span>2nd Price: <strong>75$</strong></span>
+														</div>
+														<div class="small-12 medium-4 columns">
+															<span>3rd Price: <strong>50$</strong></span>
+															<span>4th Price: <strong>25$</strong></span>
+														</div>
+														<div class="small-12 medium-4 columns">
+															<span>5th Price: <strong>15$</strong></span>
+														</div>
+													</div>
+												</div>
+												<a href="#" class="view-more">Participate Now <i class="icon-circle-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 medium-6 columns">
+											<div class="widget today-news equal-2 border light-green light-green-bg mb30">
+												<div class="header">
+													<h4>today news</h4>
+													<span class="color-green icon-arrow-left"></span>
+													<span class="color-green icon-arrow-right"></span>
+												</div>
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i class="icon-comment color-green inline size-16 lh12"></i>
+														<span class="date inline">12.12.2014</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">Advertising material added for the referral rallye!</a>
+													</div>
+												</div>
+
+												<hr class="green mr0 ml0" />
+
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i class="icon-comment color-green inline size-16 lh12"></i>
+														<span class="date inline">12.12.2014</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">New referral rallye started (300$ to win!). Payment proofs added.</a>
+													</div>
+												</div>
+
+												<hr class="green mr0 ml0" />
+
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i class="icon-comment color-green inline size-16 lh12"></i>
+														<span class="date inline">12.12.2014</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">Additional domain http://repla.cr added. All http://gca.sh links also valid as http://repla.cr!</a>
+													</div>
+												</div>
+
+												<hr class="green mr0 ml0" />
+
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i class="icon-comment color-green inline size-16 lh12"></i>
+														<span class="date inline">12.12.2014</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">The referral rallye has ended and each user has been paid. All open payments will be done.</a>
+													</div>
+												</div>
+											</div>	
+										</div>
+
+										<div class="small-12 medium-6 columns">
+											<div class="widget top-urls equal-2 border mb30">
+												<div class="header">
+													<h4>Top url’s</h4>
+													<span class="color-blue icon-arrow-left"></span>
+													<span class="color-blue icon-arrow-right"></span>
+												</div>
+												
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i class="hot"></i>
+														<span class="date inline">3 week ago</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">My Files</a>
+													</div>
+													<div class="cell-3">
+														<strong class="clicks">366 Clicks</strong>
+													</div>
+												</div>
+
+												<hr class="blue mr0 ml0" />
+												
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i></i>
+														<span class="date inline">4 week ago</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">http://gca.sh/mLNM4</a>
+													</div>
+													<div class="cell-3">
+														<strong class="clicks">62 Clicks</strong>
+													</div>
+												</div>
+
+												<hr class="blue mr0 ml0" />
+												
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i></i>
+														<span class="date inline">4 week ago</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">Home crowd community.de</a>
+													</div>
+													<div class="cell-3">
+														<strong class="clicks">12 Clicks</strong>
+													</div>
+												</div>
+
+												<hr class="blue mr0 ml0" />
+												
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i></i>
+														<span class="date inline">1 month ago</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">http://gca.sh/Ca4h5</a>
+													</div>
+													<div class="cell-3">
+														<strong class="clicks">6 Clicks</strong>
+													</div>
+												</div>
+
+												<hr class="blue mr0 ml0" />
+												
+												<div class="t-row color-grey">
+													<div class="cell-1">
+														<i></i>
+														<span class="date inline">1 month ago</span>
+													</div>
+													<div class="cell-2">
+														<a class="mb0">http://gca.sh/WitIU</a>
+													</div>
+													<div class="cell-3">
+														<strong class="clicks">2 Clicks</strong>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="small-12 column">
+											<div class="widget your-links border light-green light-green-bg">
+												<div class="header">
+													<h4>Your links</h4>
+													<div class="links">
+														<a class="inline" href="#">Newest</a>
+														<a class="inline" href="#">Popular</a>
+														<a class="inline active" href="#">Oldest</a>
+													</div>
+												</div>
+												<div class="form-wrap">
+													<form action="" class="green-brdr">
+														<div class="row collapse">
+															<div class="small-12 medium-6 columns">
+																<input class="white-bg" type="text" placeholder="Enter a keyword and press enter">
+															</div>															
+															<div class="small-12 medium-6 large-5 columns">
+																<div class="row margin-fix">
+																	<div class="small-12 medium-6 columns">
+																		<button class="button blue expand mb10">Select All</button>
+																	</div>
+																	<div class="small-12 medium-6 columns">
+																		<button class="button red expand">Delete All</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="t-row mt30">
+															<div class="cell-1">
+																<input type="checkbox" id="check-1" />
+																<label for="check-1"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<hr class="green mr0 ml0" />
+
+														<div class="t-row">
+															<div class="cell-1">
+																<input type="checkbox" id="check-2" />
+																<label for="check-2"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<hr class="green mr0 ml0" />
+
+														<div class="t-row">
+															<div class="cell-1">
+																<input type="checkbox" id="check-3" />
+																<label for="check-3"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<hr class="green mr0 ml0" />
+
+														<div class="t-row">
+															<div class="cell-1">
+																<input type="checkbox" id="check-4" />
+																<label for="check-4"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<hr class="green mr0 ml0" />
+
+														<div class="t-row">
+															<div class="cell-1">
+																<input type="checkbox" id="check-5" />
+																<label for="check-5"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<hr class="green mr0 ml0" />
+
+														<div class="t-row">
+															<div class="cell-1">
+																<input type="checkbox" id="check-6" />
+																<label for="check-6"></label>
+															</div>
+															<div class="cell-2">
+																<i class="icon"></i>
+																<strong class="title size-14">Webseite der Gemeinde Ohne - Unsere Gemeinde</strong>
+																<span class="date color-grey">Added: 2014-12-14 07:51:42</span>
+															</div>
+															<div class="cell-3">
+																<a href="#" class="short-link mr10 size-14 inline">http://gca.sh/xiI5l</a>
+																<span class="copy-link">Copy</span>
+																<div class="actions">
+																	<a class="color-grey" href="#">Delete</a>
+																	<a class="color-grey" href="#">Archive</a>
+																	<a class="color-grey" href="#">Statistics</a>
+																</div>
+															</div>
+															<div class="cell-4">
+																<strong class="color-green">451</strong>
+																<span>clicks</span>
+															</div>
+														</div>
+
+														<a href="#" class="button expand light-green mt30 mb0">
+															<strong>Load more</strong>
+														</a>
+
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>			
+
+								</article>
+
+							</div>
+						</div>
+					</main>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" role="contentinfo">
+			<div class="row">
+				<div class="small-12 medium-4 columns">
+					<div class="logo-wrap">
+						<a href="#" class="logo" title="repla.cr">repla.cr</a>
+						<span class="copyright">2015 © repla.cr </span>
+					</div>
+				</div>
+				<div class="small-12 medium-8 columns">
+					<nav>
+						<a href="#" title="Home" class="current">Home</a>
+						<a href="#" title="Datenschutz">Datenschutz</a>
+						<a href="#" title="Impressum">Impressum</a>
+						<a href="#" title="AGB">AGB</a>
+						<a href="#" title="developer">developer</a>
+						<a href="#" title="Monetize Your Website">Monetize Your Website</a>
+						<a href="#" title="Contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/fancySelect.min.js"></script>
+		<script src="js/vendor/fastclick.js"></script>
+		<script src="js/vendor/placeholder.js"></script>
+		<script src="js/vendor/tipso.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

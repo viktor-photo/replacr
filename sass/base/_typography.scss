@@ -1,0 +1,85 @@
+h1, h2, h3, h4, h5{
+	font-weight: 400;
+	font-family: $main-font-family;
+	line-height: 1.2em;
+	margin: 0 0 0.5em;
+	text-transform: uppercase;
+	color: $color-navy;
+}
+h1{
+	font-size: 20px;
+}
+h2{
+	font-size: 18px;
+}
+h3{
+	font-size: 16px;
+}
+h4{
+	font-size: 14px;
+}
+h5{
+	font-size: 12px;
+}
+
+a, 
+a:hover, 
+a:focus{
+	text-decoration: none;
+	color: $color-green;
+}
+strong,
+.bold{
+	font-weight: 700;
+}
+small{
+	font-size: 0.825em;
+}
+p{
+	line-height: 1.35em;
+	margin-bottom: 1rem;
+	font-size: $initial-size;
+}
+
+
+
+.title-with-line{
+	display: block;
+	position: relative;
+	text-align: center;
+	line-height: 1em;
+	height: 1em;
+	z-index: 1;
+	margin: 0 auto 2rem;
+	overflow: hidden;
+
+	span{
+		display: table;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		padding: 0 1.5rem;
+		z-index: 1;
+	
+		&:before,
+		&:after{
+			content: '';
+			width: 550px;
+			height: 1px;
+			background: $color-green;
+			display: block;
+			position: absolute;
+			top: 49%;
+			opacity: 0.35;
+			z-index: -1;
+		}
+
+		&:before{
+			left: 100%;
+		}
+		
+		&:after{
+			right: 100%;
+		}
+	}
+}

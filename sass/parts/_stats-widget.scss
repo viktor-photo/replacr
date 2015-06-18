@@ -1,0 +1,110 @@
+.stats-widget{
+	position: relative;
+	font-family: $main-font-family;
+	padding: 20px 10px 50px;
+	z-index: 1;
+
+	&:before{
+		font-family: replacr;
+		display: block;
+		z-index: 1;
+		position: absolute;
+		color: $color-white;
+		text-align: center;
+		font-size: 220px;
+		line-height: 1em;
+		top: -20%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		opacity: 0.125;
+
+		@include up-to-medium{
+			top: 0;
+		}
+	}
+
+	&.more-10{
+		@include up-to-medium{
+			max-height: 180px;
+		}
+	}
+
+	&.more-10:before{
+		content: '\e60b';
+	}
+
+	&.race-300:before{
+		content: '\e60d';
+	}
+
+	h3{
+		font-size: 20px;
+		color: $color-white;
+		line-height: 1em;
+		margin: 0 auto 20px;
+		padding: 0 20px;
+		text-transform: inherit;
+		display: table;
+		border-bottom: 1px solid rgba(255,255,255,0.4);
+
+		@include up-to-smartphone{
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+
+		.sub-title{
+			font-size: $initial-size;
+			color: $color-navy;
+			display: block;
+			padding-bottom: 5px;
+		}
+	}
+
+	p{
+		font-size: 14px;
+		margin-bottom: 0;
+
+		@include up-to-smartphone{
+
+			font-size: $initial-size;
+			
+			br{
+				display: none;
+			}
+		}
+	}
+
+	.row span{
+		display: block;
+		font-size: 14px;
+
+		@include up-to-smartphone{
+			font-size: $initial-size;
+		}	
+	}
+
+	.view-more{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-white;
+		background: $color-navy;
+		font-family: $main-font-family;
+		z-index: 1;
+
+		i{
+			font-family: replacr;
+			font-size: 1rem;
+			margin-left: 5px;
+			position: relative;
+			top: 3px;
+		}
+	}
+}

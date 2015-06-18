@@ -1,0 +1,535 @@
+<!doctype html>
+<!--[if IE 8]><html lang="pl" class="no-js lt-ie10 lt-ie9 ie8 ie" ng-app='App'> <![endif]-->
+<!--[if IE 9]><html lang="pl" class="no-js lt-ie10 ie9 ie" ng-app='App'> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="pl" class="no-js" ng-app='App'> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<title>repla.cr</title>
+		<meta name="description" content="Project description">
+		<script src="js/vendor/modernizr.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header" role="banner">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="logo left">
+						<a href="#" title="repla.cr">repla.cr</a>
+					</h1>
+
+					<div id="menu-trigger-wrap" class="left">
+						<span title="Menu"><i></i></span>
+					</div>
+
+					<div id="settings-link" class="left">
+						<span class="icon-settings"></span>
+					</div>
+
+					<div id="shorten-url-form" class="left">
+						<i class="icon-url"></i>
+						<span class="legend">Paste a long url link</span>
+						<form action="" id="shorten-url">
+							<input type="text">
+						</form>
+					</div>
+
+					<div class="account-settings right clearfix">
+						<div class="lang-select">
+							<span class="legend">Preferred language:</span>
+							<select name="" id="language">
+								<option value="1" data-icon="en">en</option>
+								<option value="2" data-icon="pl">pl</option>
+								<option value="3" data-icon="ru">ru</option>
+								<option value="4" data-icon="de">de</option>
+								<option value="5" data-icon="nl">nl</option>
+								<option value="6" data-icon="sp">sp</option>
+								<option value="7" data-icon="he">he</option>
+								<option value="8" data-icon="es">es</option>
+								<option value="9" data-icon="fr">fr</option>
+								<option value="10" data-icon="hi">hi</option>
+								<option value="11" data-icon="ar">ar</option>
+								<option value="12" data-icon="ch">ch</option>
+							</select>
+						</div>
+						<div class="prefs">
+							<a href="#" title="Settings">
+								<i class="icon-settings"></i>
+								<span>Settings</span>
+							</a>
+						</div>
+						<div class="logout-link">
+							<a href="#" title="logout">
+								<i class="icon-logout"></i>
+								<span>Logout</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div id="content">
+			<div class="row collapse">
+
+				<div class="content-flex-wrap">
+
+					<!-- Aside section -->
+					<aside id="sidebar" class="wide">
+						<div class="clearfix">
+
+							<div class="profile-header">
+								<a class="profile-avatar" href="#">
+									<img src="img/profile-default-avatar.png" alt="Profile Avatar" />
+								</a>
+
+								<div class="profile-info">
+									<div class="greeting">
+										<span><strong>Hello </strong>Janosh</span>
+									</div>
+									<div class="level">
+										<span>lvl <i>1</i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="account-stats">
+								<h5>Account Stat's</h5>
+								<div class="stats-table">
+									<div class="t-row">
+										<strong>2.14570$</strong>
+										<span>Current balance</span>
+									</div>
+									<div class="t-row">
+										<strong>1.33700$</strong>
+										<span>Total Earned - Clicks</span>
+									</div>
+									<div class="t-row">
+										<strong>0.80870$</strong>
+										<span>Total Earned - Referral</span>
+									</div>
+									<div class="t-row">
+										<strong>6</strong>
+										<span>URLs</span>
+									</div>
+									<div class="t-row">
+										<strong>702</strong>
+										<span>Clicks</span>
+									</div>
+								</div>
+							</div>
+
+							<ul class="sidebar-menu">
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-9"></i>
+										<span>g!center</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="" class="current">
+										<i class="icon icon-8"></i>
+										<span>Payout</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-7"></i>
+										<span>Website scripts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-6"></i>
+										<span>Referral System</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-5"></i>
+										<span>Referral Rallye</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-4"></i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-3"></i>
+										<span>Archive</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-2"></i>
+										<span>Last 15 User Payouts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										<i class="icon icon-1"></i>
+										<span>GCa.sh Forum</span>
+									</a>
+								</li>
+							</ul>
+
+							<!-- Hello Block -->
+							<div class="hello-block">
+
+								<!-- Skype block -->
+								<div class="skype">
+									<a href="#" title="">
+										<span class="block-wrap">
+											<i class="icon-skype"></i>
+											<span class="text">
+												<em class="q">Questions?</em> Contact support<br />Or add manually: <em>nk-gcash</em>
+											</span>
+										</span>
+										<span class="skype-footer">Write a message or call</span>
+									</a>
+								</div>
+
+								<!-- Write a ticket -->
+								<div class="write-ticket">
+									<a href="#" title="">
+										<i class="icon-new-message"></i>
+										<span class="block-wrap v-align">
+											<span class="title">Something unusual?</span>
+											<span class="subtitle">write a ticket</span>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</aside>
+
+					<!-- Main content section -->
+					<main id="main">
+						<div class="row collapse">
+							<div class="small-12 columns">
+
+								<article>
+									<div class="row">
+										<div class="small-12 columns">
+											<div class="header">
+												<h1 class="mb0">Something unusual? Write a ticket</h1>
+												<p class="subheader">Before asking a question, please refer to the documentation, which is located <br />at <a href="#" title="" target="_blank" class="color-blue">www.forum.repla.cr</a>. If you can not find the answer there, please use the form below.</p>
+											</div>
+										</div>
+									</div>		
+
+									<hr class="blue" />
+
+									<div class="row">
+										<div class="small-12 columns">
+											<!-- Info block -->
+											<div class="info-b success-b mt10 mb20">
+												<div class="b-title">
+													<span>Congratulations!</span>
+												</div>
+												<div class="b-content">
+													<div>
+														<p><strong>Your ticket was send!</strong><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit,.</p>
+													</div>
+												</div>
+											</div>
+											<!-- End of Info block -->											
+										</div>
+									</div>
+									
+									<!-- Send new ticket form -->
+									<form action="" name="" id="send-new-ticket">
+										<div class="row">
+											<div class="small-12 medium-3 large-2 columns">
+												<label for="">Topic:</label>
+											</div>
+											<div class="small-12 medium-9 large-10 columns">
+												<div class="clearfix mb10">
+													<select name="" id="" class="fancy-select">
+														<option value="topic-1">Technical issues</option>
+														<option value="topic-2">Lorem ipsum</option>
+														<option value="topic-3">Sit dolor amet</option>
+														<option value="topic-4">Another issues</option>
+													</select>
+												</div>	
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="small-12 medium-3 large-2 columns">
+												<label for="text-field">Message:</label>
+											</div>
+											<div class="small-12 medium-9 large-10 columns">
+												<textarea name="message" id="text-field" placeholder="Write your message here..." class="mb10" cols="30" rows="5"></textarea>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="small-12 medium-9 medium-offset-3 large-10 large-offset-2 columns">
+												<button class="button blue expand">send ticket</button>
+											</div>
+										</div>	
+									</form>
+									<!-- End of form -->
+
+									<hr class="blue" />
+
+									<div class="row">
+										<div class="small-12 columns">
+											<!-- Info block -->
+											<div class="info-b alert-b mt10 mb10">
+												<div class="b-title">
+													<span>Information!</span>
+												</div>
+												<div class="b-content">
+													<div>
+														<p>Closed Issues (solved problems) are marked with an icon <i class="size-20 icon-check color-green"></i>, not closed <i class="size-20 icon-attention color-red"></i>. If the topic icon displays a new message <i class="size-20 icon-new-message color-yellow"></i>, it means that your request has been answered. To view all of the answers, click on the topic of application.</p>
+													</div>
+												</div>
+											</div>
+											<!-- End of Info block -->
+										</div>
+									</div>
+									
+
+
+									<!-- Last tickets table -->
+									<div class="payments">
+										<div class="row">
+											<div class="small-12 column">
+												<section class="widget border green mt30 mb20">
+													<div class="header mb0">
+														<h4>Last tickets</h4>
+													</div>
+
+													<div class="tickets-list">
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#1</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-new-message text-center size-20 color-yellow"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#2</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-check text-center size-20 color-green"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#3</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-attention text-center size-20 color-red"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#4</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-new-message text-center size-20 color-yellow"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#5</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-check text-center size-20 color-green"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#6</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-attention text-center size-20 color-red"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+														<!-- table row -->
+														<div class="t-row">
+															<div class="cell-1">
+																<span class="color-grey">#7</span>
+															</div>
+															<div class="cell-2">
+																<span class="bold">Something wrong with my account</span>
+															</div>
+															<div class="cell-3">
+																<span class="to-hide color-grey">(Technical issues)</span>
+															</div>
+															<div class="cell-4">
+																<span class="to-hide color-grey">open in </span><strong class="date">2014-12-14</strong><strong class="time">07:51:42</strong>
+															</div>
+															<div class="cell-5">
+																<span class="icon-new-message text-center size-20 color-yellow"></span>
+															</div>
+															<div class="cell-6">
+																<a href="#" class="action show">Show</a>
+																<a href="#" class="action answer">Answer</a>
+																<a href="#" class="action delete">Delete</a>
+															</div>
+														</div>
+
+														<!-- Load more -->
+														<a href="#" class="button expand light-green mt20 mb0">
+															<strong>Load more</strong>
+														</a>
+													</div>
+												</section>	
+											</div>
+										</div>	
+									</div>
+
+								</article>
+
+							</div>
+						</div>
+					</main>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" role="contentinfo">
+			<div class="row">
+				<div class="small-12 medium-4 columns">
+					<div class="logo-wrap">
+						<a href="#" class="logo" title="repla.cr">repla.cr</a>
+						<span class="copyright">2015 © repla.cr </span>
+					</div>
+				</div>
+				<div class="small-12 medium-8 columns">
+					<nav>
+						<a href="#" title="Home" class="current">Home</a>
+						<a href="#" title="Datenschutz">Datenschutz</a>
+						<a href="#" title="Impressum">Impressum</a>
+						<a href="#" title="AGB">AGB</a>
+						<a href="#" title="developer">developer</a>
+						<a href="#" title="Monetize Your Website">Monetize Your Website</a>
+						<a href="#" title="Contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/fancySelect.min.js"></script>
+		<script src="js/vendor/fastclick.js"></script>
+		<script src="js/vendor/placeholder.js"></script>
+		<script src="js/vendor/tipso.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

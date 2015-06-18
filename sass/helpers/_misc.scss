@@ -1,0 +1,241 @@
+.ir{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// Fix for 5 col grid
+.col-5{	width: 20%;}
+
+.transition{
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: 	all 0.25s ease-in-out;
+	-ms-transition: 	all 0.25s ease-in-out;
+	transition: 		all 0.25s ease-in-out;
+}
+
+.full-height{
+	height: 100%;
+	position: relative;
+}
+
+.navy-bg{ background-color: $color-navy !important;}
+.blue-bg{ background-color: $color-blue !important;}
+.green-bg{ background-color: $color-green !important;}
+.yellow-bg{ background-color: $color-yellow !important;}
+.red-bg{ background-color: $color-red !important;}
+.grey-bg{ background-color: $color-grey !important;}
+.white-bg{ background-color: $color-white !important;}
+
+.light-blue-bg{ background-color: $color-light-blue !important;}
+.light-green-bg{ background-color: $color-light-green !important;}
+.light-yellow-bg{ background-color: $color-light-yellow !important;}
+.light-red-bg{ background-color: $color-light-red !important;}
+
+.color-navy{ color: $color-navy !important;}
+.color-blue{ color: $color-blue !important;}
+.color-green{ color: $color-green !important;}
+.color-yellow{ color: $color-yellow !important;}
+.color-red{ color: $color-red !important;}
+.color-grey{ color: $color-grey !important;}
+.color-white{ color: $color-white !important;}
+
+hr, .hr{
+	border: none;
+	margin: 1.25rem 0.9375em;
+	height: 1px;
+	display: block;
+}
+hr.blue, .hr.blue{ background: lighten($color-blue, 25%);}
+hr.green, .hr.green{ background: lighten($color-green, 30%);}
+hr.red, .hr.red{ background: lighten($color-red, 20%);}
+hr.yellow, .hr.yellow{ background: lighten($color-yellow, 5%);}
+
+.no-margin{	margin: 0;}
+.negative-margin{ margin: 0 -0.9375em;}
+
+.mb0{	margin-bottom: 0;}
+.mb5{	margin-bottom: 5px;}
+.mb10{	margin-bottom: 10px;}
+.mb20{	margin-bottom: 20px;}
+.mb30{	margin-bottom: 30px;}
+.mr0{	margin-right: 0;}
+.mr5{	margin-right: 5px;}
+.mr10{	margin-right: 10px;}
+.mr20{	margin-right: 20px;}
+.mr30{	margin-right: 30px;}
+.ml0{	margin-left: 0;}
+.ml5{	margin-left: 5px;}
+.ml10{	margin-left: 10px;}
+.ml20{	margin-left: 20px;}
+.ml30{	margin-left: 30px;}
+.mt0{	margin-top: 0;}
+.mt5{	margin-top: 5px;}
+.mt10{	margin-top: 10px;}
+.mt20{	margin-top: 20px;}
+.mt30{	margin-top: 30px;}
+
+.size-14{ font-size: 14px;}
+.size-16{ font-size: 16px;}
+.size-18{ font-size: 18px;}
+.size-20{ font-size: 20px;}
+.size-22{ font-size: 22px;}
+
+.v-align{
+	position: relative;
+	top: 50%;
+	@include translate(0,-50%,0);
+}
+
+.inline{display: inline;}
+.block{display: block;}
+.table{display: table;}
+.table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.lh12{line-height: 12px;}
+.lh16{line-height: 16px;}
+.lh34{line-height: 34px;}
+
+.uppercase{text-transform: uppercase;}
+
+.brdr-right{ border-right: 1px solid $color-green;}
+.brdr-left{  border-left: 1px solid $color-green;}
+
+.header-highlight{
+	display: block;
+	margin-bottom: 1.25rem;
+	width: 100%;
+	position: relative;
+	line-height: 34px;
+
+	h5{
+		line-height: 1.25em;
+		padding: 0.625rem;
+		margin: 0;
+	}
+}
+
+.copy-link{
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	background: $color-green;
+	color: $color-white;
+	font-weight: 700;
+	
+	&.blue{
+		background: $color-blue;
+	}
+
+	&:after {
+		right: 100%;
+		top: 50%;
+		border: solid transparent;
+		content: '';
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(46, 204, 113, 0);
+		border-right-color: $color-green;
+		border-width: 5px;
+		margin-top: -5px;
+	}
+
+	&.blue:after{
+		border-right-color: $color-blue;
+	}
+
+	&:hover{
+		background: $color-blue;
+
+		&:after{
+			border-right-color: $color-blue;
+		}
+	}
+}
+
+.badge{
+	width: 125px;
+	height: 125px;
+	display: block;
+	border-radius: 50%;
+	letter-spacing: -0.025em;
+	text-align: center;
+	font-size: 8px;
+	text-transform: uppercase;
+
+	@include up-to-tablet{
+		width: 90px;
+		height: 90px;
+		font-size: 7px;
+	}
+
+	&.blue{
+		background: $color-blue;
+		color: $color-white;
+	}
+	&.green{
+		background: $color-green;
+		color: $color-white;
+	}
+	&.red{
+		background: $color-red;
+		color: $color-white;
+	}
+	&.yellow{
+		background: $color-yellow;
+		color: $color-navy;
+	}
+
+	em{
+		font-size: 75px;
+		font-weight: 100;
+		font-family: $main-font-family;
+		display: block;
+		padding-top: 1rem;
+		font-style: normal;
+		line-height: 1em;
+		letter-spacing: -0.05em;
+
+		@include up-to-tablet{
+			font-size: 50px;
+		}
+	}
+}
+
+
+.zebra{
+	margin: 0;
+	list-style: none;
+	font-size: $initial-size;
+
+	li{
+		display: block;
+		padding: 0.5rem;
+
+		&:nth-child(2n-1){
+			background: $color-light-blue;
+		}
+	}
+
+	@include up-to-medium{
+		
+		&.inverted {
+
+			li:nth-child(2n){
+				background: $color-light-blue;
+			}
+			li:nth-child(2n-1){
+				background: $color-white;
+			}
+
+		}
+	}
+}

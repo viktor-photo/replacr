@@ -1,0 +1,103 @@
+// Mixins
+
+// Transition
+@mixin transition($what,$duration){
+	-webkit-transition: $what $duration ease-in-out;
+	-moz-transition: 	$what $duration ease-in-out;
+	-ms-transition: 	$what $duration ease-in-out;
+	transition: 		$what $duration ease-in-out;
+}
+
+// Rotate
+@mixin rotate($deg) {
+	-webkit-transform: 	rotate($deg);
+	-moz-transform: 	rotate($deg);
+	-ms-transform: 		rotate($deg);
+	transform: 			rotate($deg);
+}
+
+// Translate
+@mixin translate($plx,$ply,$plz){
+	-webkit-transform: 	translate3d($plx,$ply,$plz);
+	-moz-transform: 	translate3d($plx,$ply,$plz);
+	-ms-transform: 		translate3d($plx,$ply,$plz);
+	transform: 			translate3d($plx,$ply,$plz);
+}
+
+// Scale
+@mixin scale($h,$v){
+	-webkit-transform: 	scale($h,$v);
+	-moz-transform: 	scale($h,$v);
+	-ms-transform: 		scale($h,$v);
+	transform: 			scale($h,$v);
+}
+
+// Opacity transition
+@mixin opacity{
+	-webkit-transition: opacity 0.1s ease, visibility 0.1s ease;
+	-moz-transition: opacity 0.1s ease, visibility 0.1s ease;
+	-ms-transition: opacity 0.1s ease, visibility 0.1s ease;
+	transition: opacity 0.1s ease, visibility 0.1s ease;
+}
+
+// Custom media queries
+
+// Smartphones layout
+@mixin up-to-smartphone{
+	@media (max-width: #{$width-smartphone - 1px}) {
+		@content;
+	}
+}
+@mixin smartphone-only {
+	@media (min-width: #{$width-smartphone}) and (max-width: #{$width-tablet - 1px}) {
+		@content;
+	}
+}
+
+// Medium layout
+@mixin up-to-medium {
+	@media (max-width: #{$width-medium}) {
+		@content;
+	}
+}
+@mixin medium-only {
+	@media (min-width: #{$width-medium}) and (max-width: #{$width-tablet - 1px}) {
+		@content;
+	}
+}
+
+// Tablet layout
+@mixin up-to-tablet {
+	@media (max-width: #{$width-tablet}) {
+		@content;
+	}
+}
+@mixin tablet-only {
+	@media (min-width: #{$width-tablet}) and (max-width: #{$width-desktop - 1px}) {
+		@content;
+	}
+}
+
+// Desktop layout
+@mixin up-to-desktop {
+	@media (max-width: #{$width-desktop}) {
+		@content;
+	}
+}
+@mixin desktop-only {
+	@media (min-width: #{$width-desktop}) {
+		@content;
+	}
+}
+
+// Widescreen layout
+@mixin up-to-widescreen {
+	@media (max-width: #{$width-widescreen}) {
+		@content;
+	}
+}
+@mixin widescreen-only {
+	@media (min-width: #{$width-widescreen}) {
+		@content;
+	}
+}

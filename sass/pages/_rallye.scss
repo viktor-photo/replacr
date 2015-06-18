@@ -1,0 +1,18 @@
+.attention-box{
+
+	.header{
+
+		h2{
+			font-size: 1.875rem;
+			font-weight: 300;
+
+			@include up-to-tablet{
+				font-size: 1.5rem;
+			}
+
+			@include up-to-smartphone{
+				font-size: 1rem;
+			}
+		}
+	}
+}

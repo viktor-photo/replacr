@@ -1,0 +1,16 @@
+.logo{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+
+	a{
+		width: 93px;
+		height: 50px;
+		display: block;
+		background: url('../img/logo-2x.png') no-repeat center center;
+		background-size: 100% auto;
+		overflow: hidden;
+		text-indent: 100%;
+	}
+}

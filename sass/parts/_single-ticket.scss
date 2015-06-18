@@ -1,0 +1,141 @@
+.single-ticket{
+	position: relative;
+	display: block;
+	border: 1px solid lighten($color-green, 35%);
+
+	.t-row{
+		display: table;
+		padding: 0 20px;
+		height: 55px;
+		width: 100%;
+
+		div[class^="cell-"]{
+			display: table-cell;
+			vertical-align: middle;
+
+			&:last-child{
+				text-align: right;
+			}
+		}
+
+		.ticket-title{
+			font-size: 14px;
+		}
+
+		@include up-to-medium{
+			padding: 0 10px;
+
+			.cell-1,
+			.cell-3{
+				width: 0;
+
+				span{
+					display: none;
+				}
+			}
+
+			.cell-4 {
+				span{
+					display: none;
+				}
+				strong{
+					display: block;
+					font-size: 11px;
+					line-height: 14px;
+				}	
+			}
+
+			.cell-5 span{
+				display: none;
+			}
+
+			.ticket-title{
+				font-weight: 400;
+				line-height: 14px;
+				display: block;
+				font-size: $initial-size;
+			}
+		}
+	}
+
+	.status{
+		font-weight: 700;
+		text-transform: uppercase;
+
+		&.open{
+			color: $color-green;
+		}
+
+		&.closed{
+			color: $color-red;
+		}
+	}
+
+	section{
+		position: relative;
+
+		&.user{
+
+			.t-row{
+				background: $color-light-green;
+			}
+		}
+
+		&.admin{
+
+			.t-row{
+				background: $color-light-blue;
+			}
+		}
+		
+		@include up-to-medium{
+
+			.cell-2{ 
+				strong{
+					display: block;
+				}
+				span.color-grey{
+					display: none;
+				}	
+			}
+
+			.color-grey{
+				display: block;
+			}
+
+		}	
+		
+		strong.name{
+			font-size: 14px;
+		}
+
+		.content{
+			padding: 20px;
+
+			@include up-to-medium{
+				padding: 10px;
+			}	
+		}
+	}
+}
+
+
+#ticket-answer .wrap{
+	padding: 10px 20px;
+	border: 1px solid lighten($color-blue, 15%);
+	display: block;
+	position: relative;
+
+	@include up-to-medium{
+		padding: 10px;
+	}
+
+	p:last-child{
+		margin-bottom: 0;
+	}
+
+	textarea{
+		padding-left: 0; 
+		padding-right: 0; 
+	}
+}

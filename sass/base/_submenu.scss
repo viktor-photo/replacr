@@ -1,0 +1,32 @@
+ul.submenu{
+	display: block;
+	list-style: none;
+	margin-left: 0;
+	font-size: $initial-size;
+	font-family: $secondary-font-family;
+
+	&.align-center{
+		text-align: center;
+		border-top: 1px solid lighten($color-blue, 30%);
+		border-bottom: 1px solid lighten($color-blue, 30%);
+	}
+
+	li{
+		position: relative;
+		display: inline-block;
+
+		&.active a{
+			color: $color-white;
+			background: $color-blue;
+			outline: none;
+		}
+
+		a{
+			color: $color-navy;
+			background: $color-white;
+			line-height: 36px;
+			display: block;
+			padding: 0 1rem;
+		}
+	}
+}

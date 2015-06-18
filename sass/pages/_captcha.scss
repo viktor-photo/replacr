@@ -1,0 +1,337 @@
+.captcha{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url('../img/captcha-page-bg.jpg') no-repeat center top;
+	background-size: cover;
+}
+
+.has-overlay{
+	position: relative;
+
+	&:before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $color-navy;
+		opacity: 0.9;
+	}
+}	
+
+
+// Captcha boxes
+.captcha-box{
+	display: block;
+	background: $color-white;
+	height: auto;
+	padding: 30px;
+	margin: 0 auto;
+	position: relative;
+	top: 10%;
+	z-index: 9999;
+
+	@include up-to-smartphone{
+		padding: 20px;
+	}
+
+	h2{
+		font-weight: 300;
+	}
+
+	&.type-1{
+		width: 360px;
+
+		@include up-to-smartphone{
+			width: 300px;
+		}
+
+		h2{
+			font-size: 30px;
+
+			@include up-to-smartphone{
+				font-size: 20px;
+			}
+		}
+
+		h3{
+			@include up-to-smartphone{
+				font-size: 12px;
+			}
+		}
+	}
+
+	&.type-2{
+
+		width: 720px;
+		display: table;
+		
+		@include up-to-medium{
+			width: 360px;
+			display: block;
+		}
+
+		.tc{
+			display: table-cell;
+			width: 330px;
+			height: 250px;
+			text-align: center;
+			vertical-align: middle;
+			
+			.pl{
+				padding-left: 30px;
+
+				@include up-to-medium{
+					padding: 0;
+					border: none;
+				}
+			}
+			.pr{
+				padding-right: 30px;
+
+				@include up-to-medium{
+					padding: 0;
+					border: none;
+				}
+			}
+
+			@include up-to-medium{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		h2{
+			font-size: 30px;
+
+			@include up-to-tablet{
+				font-size: 20px;
+			}
+
+			@include up-to-medium{
+				margin-top: 30px;
+			}
+		}
+
+		h3{
+			@include up-to-tablet{
+				font-size: 12px;
+			}
+		}
+	}
+
+	&.type-3{
+
+		width: 788px;
+		display: block;
+		padding: 30px 0 0;
+		max-width: 100%;
+		
+		@include up-to-desktop{
+			width: 720px;
+		}
+
+		@include up-to-tablet{
+			width: 340px;
+			padding-top: 20px;
+		}
+
+		@include up-to-medium{
+			width: 300px;
+		}
+
+		.button{
+			max-width: 300px;
+
+			@include up-to-smartphone{
+				max-width: 260px;
+			}
+		}
+
+		.tc{
+			display: block;
+			width: 364px;
+			height: 250px;
+			vertical-align: middle;
+
+			@include up-to-desktop{
+				width: 330px;
+			}
+
+			@include up-to-tablet{
+				width: 300px;
+				margin: 0 20px 20px;
+				height: auto;
+			}
+
+			@include up-to-medium{
+				display: block;
+				width: 260px;
+			}
+			
+			.pl{
+				padding-left: 30px;
+				float: right;
+
+				@include up-to-tablet{
+					padding: 0;
+					border: none;
+					float: none;
+
+					@include translate(0,0,0);
+				}
+			}
+			.pr{
+				padding-right: 30px;
+
+				@include up-to-tablet{
+					padding: 0;
+					border: none;
+				}
+			}
+			.ad-container{
+				max-width: 300px;
+
+				@include up-to-smartphone{
+					max-width: 260px;
+				}
+			}
+		}
+
+		h2{
+			font-size: 30px;
+
+			@include up-to-tablet{
+				font-size: 20px;
+			}
+
+			@include up-to-medium{
+				margin-top: 30px;
+			}
+		}
+
+		h3{
+			@include up-to-tablet{
+				font-size: 12px;
+			}
+		}
+	}
+
+	&.type-4{
+		width: 540px;
+
+		@include up-to-tablet{
+
+		}
+
+		@include up-to-medium{
+			padding: 20px;
+			width: 430px;
+		}
+
+		@include up-to-smartphone{
+			width: 300px;
+		}
+
+		.ad-container{			
+			@include up-to-smartphone{
+				width: 130px;
+			}
+		}
+	}	
+}
+
+.ad-container{
+	display: block;
+	position: relative;
+	
+	@include up-to-medium{
+		width: 260px;
+	}
+
+	&.wide{
+		padding: 45px 30px 30px 30px;
+		background: $color-white;
+
+		@include up-to-tablet{
+			padding: 0 20px 20px;
+			width: 340px;
+			margin: 0 auto;
+		}
+
+		@include up-to-medium{
+			width: 300px;
+		}
+	}
+
+	&.vertical{
+		width: 150px;
+
+		@include up-to-medium{
+			width: 90px !important;
+		}
+	}
+}
+
+.captcha-box-wrap{
+	position: relative;
+	width: 788px;
+	display: block;
+	height: auto;
+	padding: 30px 0 0;
+	margin: 0 auto;
+	top: 5%;
+	z-index: 9999;
+
+	@include up-to-desktop{
+		width: 720px;
+	}
+	
+	@include up-to-tablet{
+		width: 340px;
+
+		&.type-4{
+			width: 540px;		
+		}
+	}
+
+	@include up-to-medium{
+
+		&.type-4{
+			width: 430px;		
+		}
+	}
+
+	@include up-to-smartphone{
+		width: 300px;
+		top: 0;
+
+		&.type-4{
+			width: 300px;
+
+			h2{
+				margin-top: 0;
+			}
+		}
+	}
+	
+	h2{
+		font-size: 30px;
+
+		@include up-to-tablet{
+			font-size: 20px;
+		}
+
+		@include up-to-medium{
+			margin-top: 30px;
+		}
+	}
+
+}

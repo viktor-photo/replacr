@@ -1,0 +1,140 @@
+.regin-page{
+	position: relative;
+	
+	@include transition(all, 0.25s);
+
+	@include up-to-tablet{
+		top: 0 !important;
+		padding: 20px 0;
+		-webkit-transform: 	translateY(0) !important;
+		-moz-transform: 	translateY(0) !important;
+		-ms-transform: 		translateY(0) !important;
+		transform: 			translateY(0) !important;
+	}
+
+	#regin{
+		position: relative;
+		background: url('../img/register-bg.jpg') no-repeat right top $color-light-green;
+		background-size: 345px auto;
+		border: 1px solid darken($color-light-green, 10%);
+		padding: 40px 30px 20px 30px;
+		font-size: $initial-size;
+
+		@include transition(all, 0.25s);
+
+		@include up-to-tablet{
+			padding: 25px 20px 10px 20px;
+			background-image: none;
+		}
+		
+		h1{
+			@include transition(all, 0.25s);
+
+			font-size: 32px;
+			font-weight: 300;
+			letter-spacing: -0.025em;
+
+			@include up-to-tablet{
+				font-size: 20px;
+
+				br{
+					display: none;
+				}
+			}
+
+			@include up-to-smartphone{
+				font-size: 16px;
+			}
+		}
+
+		h2{
+			@include transition(all, 0.25s);
+
+			font-size: 16px;
+			letter-spacing: -0.025em;
+
+			@include up-to-tablet{
+				font-size: 12px;
+
+				br{
+					display: none;
+				}
+			}
+
+			@include up-to-smartphone{
+				font-size: 10px;
+			}
+		}
+
+		h3{
+			@include transition(all, 0.25s);
+
+			@include up-to-tablet{
+				font-size: 14px;
+			}
+
+			@include up-to-medium{
+				text-align: left !important;
+			}
+		}
+
+		p{
+			@include transition(all, 0.25s);
+
+			@include up-to-medium{
+				text-align: left !important;
+
+				br {
+					display: none;
+				}
+			}
+		}
+
+		img{
+			display: block;
+			max-width: 90%;
+			margin: 0 auto 20px;
+
+			@include transition(all, 0.25s);
+
+			@include up-to-tablet{
+				max-width: 50%;
+			}
+
+			@include up-to-medium{
+				margin-bottom: 0;
+			}
+		}
+
+		.register-buttons{
+			padding-top: 175px;
+
+			@include transition(all, 0.25s);
+
+			@include up-to-tablet{
+				padding-top: 20px;
+			}
+
+			@include up-to-medium{
+				max-width: 50%;
+				display: block;
+				position: relative;
+				margin: 0 auto;
+			}
+
+			@include up-to-smartphone{
+				max-width: 90%;
+			}
+		}
+
+		.badge{
+			position: absolute;
+			top: 50%;
+			margin-top: -50px;
+
+			@include up-to-tablet{
+				margin-top: 0
+			}
+		}
+	}
+}	

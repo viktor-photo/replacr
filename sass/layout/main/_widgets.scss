@@ -1,0 +1,122 @@
+.widget{
+	position: relative;
+
+	&.border{
+		padding: 20px;
+		display: block;
+		position: relative;
+
+		&.has-table{
+			padding-bottom: 0;
+		}
+
+		@include up-to-smartphone{
+			padding: 20px 10px 10px;
+		}
+	
+		&.blue{
+			border: 1px solid lighten($color-blue, 25%);
+		}
+		&.green{
+			border: 1px solid lighten($color-green, 35%);
+		}
+		&.red{
+			border: 1px solid lighten($color-red, 25%);
+		}
+		&.yellow{
+			border: 1px solid lighten($color-yellow, 20%);
+		}
+	
+		&.light-blue{
+			border: 1px solid $color-light-blue;
+		}
+		&.light-green{
+			border: 1px solid $color-light-green;
+		}
+		&.light-red{
+			border: 1px solid $color-light-red;
+		}
+		&.light-yellow{
+			border: 1px solid $color-light-yellow;
+		}
+	}
+
+	.header{
+		display: block;
+		text-align: center;
+		padding-bottom: 12px;
+		margin-bottom: 20px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+
+		&.mb0{
+			margin-bottom: 0;
+		}
+	}
+
+	&.blue .header,
+	&.light-blue .header{
+		border-bottom-color: lighten($color-blue, 25%);
+	}
+	&.green .header,
+	&.light-green .header{
+		border-bottom-color: lighten($color-green, 35%);
+	}
+	&.red .header,
+	&.light-red .header{
+		border-bottom-color: lighten($color-red, 25%);
+	}
+	&.yellow .header,
+	&.light-yellow .header{
+		border-bottom-color: lighten($color-yellow, 20%);
+	}
+
+	// CLose button for widgets
+	.close-btn{
+		font-size: 12px;
+		font-style: normal;
+		font-family: $main-font-family;
+		line-height: 2.5em;
+		color: $color-navy;
+		cursor: pointer;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 1.625rem;
+
+		&:before{
+			right: 0;
+			position: absolute;
+			font-size: 22px;
+			font-family: replacr;
+			line-height: 1em;
+			top: 50%;
+			margin-top: -0.75rem;
+		}
+
+		@include up-to-tablet{
+			width: 1.625rem;
+			line-height: 2em;
+			white-space: nowrap;
+			text-indent: 2rem;
+			overflow: hidden;
+			display: block;
+		}
+
+		@include up-to-smartphone{
+			line-height: 20px;
+		}
+	}
+}
+
+.widget-footer{
+	padding: 20px;
+	color: $color-white;
+	background: $color-navy;
+
+	@include up-to-smartphone{
+		padding: 15px 10px;
+		font-size: 10px;
+	}
+}

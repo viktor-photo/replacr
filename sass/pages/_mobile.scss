@@ -1,0 +1,20 @@
+div.mobile{
+
+	#main{
+		padding: 1rem 0px;
+	}
+
+	.mobile-ads{
+		max-width: 300px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.ad-container{
+		width: 100%;
+
+		@include up-to-medium{
+			width: 100%;
+		}
+	}
+}

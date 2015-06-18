@@ -1,0 +1,88 @@
+// Order description
+.order-desc{
+	display: table;
+	width: 100%;
+	position: relative;
+	margin-bottom: 2rem;
+	
+	.t-row{
+		height: 55px;
+
+		&:nth-child(2n){
+			background: $color-light-green;
+		}
+
+		&:first-child > div[class^="cell-"]{
+			border-top: none;
+		}
+
+		div[class^="cell-"]{
+			border-top: 1px solid lighten($color-green, 35%);
+
+			& > span{
+				padding: 0 0.325rem;
+				display: block;
+			}
+
+			span.color-green{
+				font-size: 18px;
+				font-weight: 700;
+
+				@include up-to-tablet{
+					font-size: 16px;
+				}
+
+				@include up-to-medium{
+					font-size: 12px;
+				}
+			}
+		}
+
+		.cell-1{
+			width: 30px;
+			text-align: center;
+		}
+		.cell-3,
+		.cell-4,
+		.cell-5{
+			text-align: right;
+			width: 150px;
+
+			@include up-to-desktop{
+				min-width: auto;
+			}
+		}
+	}
+}
+
+
+main .t-row{
+	display: table;
+	width: 100%;
+
+	&.tall{
+		height: 55px;
+	}
+
+	&.brd-green{
+		div[class^="cell-"]{
+			border-top: 1px solid lighten($color-green, 35%);
+		}	
+	}
+
+	&.brd-blue{
+		div[class^="cell-"]{
+			border-top: 1px solid lighten($color-blue, 25%);
+		}
+	}
+
+	&.head{
+		text-transform: uppercase;
+	}
+
+	div[class^="cell-"]{
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;	
+	}		
+}

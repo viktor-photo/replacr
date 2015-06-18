@@ -1,0 +1,137 @@
+.social-btn{
+	display: block;
+	width: auto;
+	position: relative;
+	color: $color-white;
+	font-size: $initial-size;
+	font-family: $main-font-family;
+	padding: 0 0.5rem;	
+	line-height: 36px;
+	height: 34px;
+	text-align: right;
+	margin: 0px 0px 1.25rem;
+	background-color: $color-blue;
+
+	@include transition(all, 0.25s);
+
+	&:hover {
+		cursor: pointer;
+		color: $color-white;
+	}
+
+	&.icon-facebook:before,
+	&.icon-twitter:before,
+	&.icon-google-plus:before{
+		font-family: replacr;
+		position: absolute;
+		left: 0.5rem;
+		top: 0;
+		line-height: 34px;
+		font-size: 1.75rem;
+	}
+
+	&.icon-facebook{
+		background: #2980b9;
+	}
+	&.icon-facebook:hover{
+		background: darken(#2980b9, 6%);
+	}
+	&.icon-twitter{
+		background: #3498db;
+	}
+	&.icon-twitter:hover{
+		background: darken(#3498db, 6%);
+	}
+	&.icon-google-plus{
+		background: #e74c3c;
+	}
+	&.icon-google-plus:hover{
+		background: darken(#e74c3c, 10%);
+	}
+}
+
+
+// Social Logi n Buttons
+.social-login{
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+
+	@include transition(all, 0.1s);
+
+	@include widescreen-only{
+		margin-left: 15%;
+	}
+	@include up-to-widescreen{
+		margin-left: 8%;
+	}
+	@include up-to-medium{
+		margin-left: 30%;
+	}
+		
+	a{
+		color: $color-white;
+		font-size: $initial-size;
+		text-transform: uppercase;
+		margin-left: 30px;
+		position: relative;
+		top: 2px;
+
+		@include up-to-desktop{
+			margin-left: 1rem;
+			font-size: 10px;
+			top: 3px;
+		}		
+		
+		@include up-to-medium{
+			margin-left: 10px;
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		i{
+			width: 21px;
+			height: 21px;
+			line-height: 21px;
+			display: inline-block;
+			border-radius: 2px;
+			position: relative;
+			top: 1px;
+			margin-right: 5px;
+			text-align: center;
+			font-size: 1.125rem;
+
+			&.icon-facebook{
+				background: #3c5193;
+
+				&:before{
+					position: relative;
+					left: 2px;
+				}
+			}
+			&.icon-twitter{
+				background: #2da8e0;
+			}
+			&.icon-google-plus{
+				background: #cc2b27;
+			}
+		}
+
+		span{
+
+			@include up-to-desktop{
+				width: 65px;
+				position: relative;
+				top: 5px;
+				line-height: 12px;
+				display: inline-block;
+			}
+
+			@include up-to-medium{
+				display: none;
+			}
+		}
+	}
+}

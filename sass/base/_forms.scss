@@ -1,0 +1,488 @@
+form{
+	position: relative;
+	font-family: $main-font-family;
+	font-size: $initial-size;
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"] {
+		height: 34px;
+		line-height: 34px;
+		padding-top: 0;
+		padding-bottom: 0;
+		background: $color-white;
+		border: 1px solid $color-blue;
+		box-shadow: none;
+		font-size: $initial-size;
+	}
+
+	textarea{
+		height: auto;
+		line-height: 1.5em;
+		font-size: $initial-size;
+		background: $color-white;
+		border: 1px solid lighten($color-blue, 20%);
+		box-shadow: none;
+		font-size: $initial-size;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="password"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	textarea:focus{
+		box-shadow: none;
+		background: $color-white;
+		border-color: $color-blue;
+	}
+
+	@include up-to-medium{
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"] {
+			margin-bottom: 0.75rem;
+		}
+	}
+
+	fieldset{
+		border: none;
+		background: transparent;
+		padding: 0;
+		font-size: $initial-size;
+	}
+
+	label{
+		font-size: $initial-size;
+		line-height: 34px;
+
+		@include up-to-smartphone{
+			line-height: 20px;
+
+			&.lh16.mb10{
+				margin-bottom: 0;
+			}
+		}
+
+		&.table-cell{
+			height: 34px;
+			line-height: 1.125em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	&.green-brdr{
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="url"] {
+			border-color: lighten($color-green, 20%);
+		}
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="url"]:focus,
+		textarea:focus{
+			border-color: $color-green;
+		}
+	}
+
+	&.blue-brdr{
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="url"] {
+			border-color: lighten($color-blue, 20%);
+		}
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="url"]:focus,
+		textarea:focus{
+			border-color: $color-blue;
+		}
+	}
+
+	.no-border,
+	.no-border:focus{
+		border-color: $transparent-white;
+	}
+
+	input#max-budget{
+		font-size: 20px;
+		font-weight: 700;
+		color: $color-green;
+	}
+}
+
+// Custom radio buttons
+input[type="radio"]{
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+input[type="radio"] + label{
+	position: relative;
+	display: table;
+	background: transparent;
+	color: $color-navy;
+	padding-left: 20px;
+	margin: 0 auto 20px;
+	line-height: 1em;
+}
+input[type="radio"] + label:before{
+	content: '';
+	width: 14px;
+	height: 14px;
+	display: block;
+	border-radius: 50%;
+	border: 1px solid $color-green;
+	position: absolute;
+	left: 0;
+	top: -2px;
+
+	@include transition(border-width, 0.1s);
+}
+input[type="radio"] + label.blue:before{
+	border-color: $color-blue;
+}
+// input[type="radio"]:checked + label{
+// 	color: $color-green;
+// }
+input[type="radio"]:checked + label:before{
+	border-width: 4px;
+}
+
+// Custom checkboxes
+input[type="checkbox"]{
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+input[type="checkbox"] + label{
+	position: relative;
+	display: table;
+	background: transparent;
+	color: $color-navy;
+	padding-left: 25px;
+	margin: 0 0 20px;
+	line-height: 1em;
+}
+input[type="checkbox"] + label:before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	border: 1px solid $color-green;
+	position: absolute;
+	left: 0;
+	top: -3px;
+}
+// input[type="checkbox"]:checked + label{
+// 	color: $color-green;
+// }
+input[type="checkbox"] + label:after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-bottom: 0px solid $color-green;
+	border-left: 0px solid $color-green;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+
+	@include rotate(-45deg);
+	@include transition(all, 0.1s);
+}
+input[type="checkbox"]:checked + label:after{
+	width: 10px;
+	height: 6px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	left: 3px;
+	top: 1px;
+}
+
+//Fancy Select
+.fancy-select{
+	position: relative;
+	display: inline-block;
+	font-size: $initial-size;
+	color: $color-blue;
+	cursor: pointer;
+	z-index: 99;
+	width: 100%;
+	
+	select{
+		padding: 0;
+		opacity: 0;
+	}
+
+	.trigger{
+		position: relative;
+		padding: 0 0.5rem;
+		color: $color-navy;
+		width: 100%;
+		height: 34px;
+		line-height: 34px;
+		border: 1px solid lighten($color-blue, 20%);
+
+		&:before{
+			content: "\f107";
+			font-family: 'replacr';
+			width: 0.825em;
+			height: 50px;
+			display: block;
+			position: absolute;
+			right: 10px;
+			color: $color-blue;
+			font-size: 1.25rem;
+		}
+
+		&.open:before{
+			content: "\f106";
+		}
+	}
+
+	.options{
+		list-style: none;
+		display: none;
+		margin: 0;
+		background: $color-light-blue;
+		border: 1px solid lighten($color-blue, 20%);
+		border-top: none;
+		position: absolute;
+		right: 0;
+		top: 34px;
+		width: 100%;
+		z-index: 1;
+
+		&.open{
+			display: block;
+		}
+
+		li{
+			line-height: 34px;
+			padding: 0 0.5rem;
+			font-size:  $initial-size;
+			color: $color-navy;
+			border-bottom: 1px solid lighten($color-blue, 20%);
+			
+			@include transition(background, 0.25s);
+
+			&:hover{
+				background: darken($color-light-blue, 2%);
+			}
+
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+// Language Select
+.lang-select{
+	font-size: $initial-size;
+	font-family: $main-font-family;
+
+	& > div.fancy-select{
+		position: relative;
+		display: inline-block;
+		color: $color-blue;
+		cursor: pointer;
+		z-index: 99;
+		width: 64px;
+
+		@include up-to-smartphone{
+			width: 23px;
+		}
+
+		.trigger{
+			position: relative;
+			padding: 0 1.5rem 0 1.75rem;
+			color: $color-white;
+			width: 64px;
+			border: none;
+			line-height: 50px;
+			height: 50px;
+
+			&:before{
+				content: "\f107";
+				font-family: 'replacr';
+				width: 0.825em;
+				height: 50px;
+				display: block;
+				position: absolute;
+				right: 0;
+				color: $color-blue;
+				font-size: 1.25rem;
+			}
+
+			&.open:before{
+				content: "\f106";
+			}
+
+			span[class^="trigger"]:before{
+				content: '';
+				width: 16px;
+				height: 12px;
+				display: block;
+				background: url('../img/icons/flags.png') no-repeat 0 0 transparent;
+				background-size: 100% auto;
+				position: absolute;
+				top: 50%;
+				left: 6px;
+				margin-top: -5px;
+			}
+			span.trigger-en:before{background-position: 0 0;}
+			span.trigger-pl:before{background-position: 0 -12px;}
+			span.trigger-ru:before{background-position: 0 -24px;}
+			span.trigger-de:before{background-position: 0 -36px;}
+			span.trigger-nl:before{background-position: 0 -48px;}
+			span.trigger-sp:before{background-position: 0 -60px;}
+			span.trigger-he:before{background-position: 0 -72px;}
+			span.trigger-es:before{background-position: 0 -84px;}
+			span.trigger-fr:before{background-position: 0 -96px;}
+			span.trigger-hi:before{background-position: 0 -108px;}
+			span.trigger-ar:before{background-position: 0 -120px;}
+			span.trigger-ch:before{background-position: 0 -132px;}
+		}
+
+		.options{
+			list-style: none;
+			display: none;
+			margin: 0;
+			background: $color-light-blue;
+			border: 1px solid $color-blue;
+			position: absolute;
+			right: 0;
+			min-width: 16rem;
+			z-index: 1;
+
+			@include transition(background, 0.25s);
+
+			&.open{
+				display: block;
+			}
+
+			li{
+				line-height: 2.5rem;
+				padding: 0 0.625rem;
+				font-size:  $initial-size;
+				border-bottom: 1px solid lighten($color-silver, 2%);
+
+				&:hover{
+					background: lighten($color-silver, 2%);
+				}
+
+				&:last-child{
+					border-bottom: none;
+				}
+
+				span{
+					color: $color-navy;
+				}
+			}
+		}
+	}
+}
+
+.withdraw-method{
+	position: relative;
+
+	.trigger{
+
+		span[class^="trigger"]{
+			padding-left: 2rem;
+			display: table-cell;
+			height: 34px;
+			vertical-align: middle;
+			line-height: 14px;
+			padding-right: 1.25rem;
+			width: 100%;
+		}
+
+		span[class^="trigger"]:before{
+			content: '';
+			width: 30px;
+			height: 33px;
+			display: block;
+			background: url('../img/icons/payment/payment-icons-small.png') no-repeat 0 0 transparent;
+			background-size: 100% auto;
+			position: absolute;
+			left: 4px;
+			top: 0px;
+
+			@include scale(0.7, 0.7);
+		}
+		span.Paypal:before{	background-position: 0 0;}
+		span.Bitcoin:before{background-position: 0 -36px;}
+		span.SEPA:before{	background-position: 0 -70px;}
+		span.Wire:before{	background-position: 0 -104px;}
+	}
+
+	.options li{
+		padding-left: 40px;
+		position: relative;
+		background: $color-white;
+		
+		span{
+			display: table-cell;
+			height: 34px;
+			vertical-align: middle;
+			line-height: 14px;
+			width: 100%;
+
+			i.method-icon{
+				width: 30px;
+				height: 33px;
+				display: block;
+				background: url('../img/icons/payment/payment-icons-small.png') no-repeat 0 0 transparent;
+				background-size: 100% auto;
+				position: absolute;
+				left: 4px;
+				top: 0;
+
+				@include scale(0.7, 0.7);
+
+				&.icon-paypal{
+					background-position: 0 0;
+				}
+				&.icon-bitcoin{
+					background-position: 0 -36px;
+				}
+				&.icon-sepa{
+					background-position: 0 -70px;
+				}
+				&.icon-wire{
+					background-position: 0 -104px;
+				}
+			}
+
+		}
+
+	}
+}

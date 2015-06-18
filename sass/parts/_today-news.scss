@@ -1,0 +1,51 @@
+.today-news{
+	position: relative;
+
+	.header{
+	
+		span{
+			position: absolute;
+			top: 3px;
+			cursor: pointer;
+			opacity: 0.5;
+
+			&:hover{
+				opacity: 1;
+			}
+
+			@include transition(all, 0.2s);
+
+			&.icon-arrow-left{
+				left: 0;
+			}
+			&.icon-arrow-right{
+				right: 0;
+			}
+		}
+	}
+
+	.t-row{
+		position: relative;
+
+		.cell-1{
+			width: 95px;
+			vertical-align: top;
+
+			i{
+				position: relative;
+				top: 2px;
+				margin-right: 5px;
+			}
+		}
+
+		.cell-2{
+			a{
+				color: $color-navy;
+			}
+		}
+	}
+
+	hr{
+		margin: 8px 0;
+	}
+}

@@ -1,0 +1,122 @@
+.gcash{
+	position: relative;
+
+	& > .row{
+		padding: 15px 0 50px;
+
+		@include up-to-medium{
+			padding: 15px 0 30px;
+		}
+		@include up-to-smartphone{
+			padding: 15px 0 15px;
+		}
+	}
+
+	.gcash-item{
+		padding-top: 50px;
+
+		@include up-to-medium{
+			padding-top: 20px;
+		}
+
+		img{
+			width: 64px;
+			height: 64px;
+			display: block;
+			margin: 0 auto 25px;
+
+			@include up-to-medium{
+				margin-bottom: 5px;
+			}
+			@include up-to-smartphone{
+				width: 32px;
+				height: 32px;
+			}
+		}
+		
+		h2{
+			font-size: 38px;
+			font-weight: 300;
+
+			@include up-to-desktop{
+				font-size: 28px;
+			}
+			@include up-to-tablet{
+				font-size: 20px;
+			}
+			@include up-to-smartphone{
+				font-size: 14px;
+			}
+		}
+
+		h3{
+			margin-bottom: 0;
+			font-size: 18px;
+
+			@include up-to-medium{
+				font-size: 14px;
+			}
+		}
+
+		h4{
+			font-size: $initial-size;
+			font-weight: 700;
+		}
+
+		hr{
+			@include up-to-medium{
+				margin: 10px 0;
+			}
+		}
+
+		p{
+			font-size: 14px;
+			line-height: 1.5em;
+		}
+
+		&.has-bg{
+			padding-bottom: 60px;
+
+			&:before{
+				content: '';
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0.075;
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: center center;
+
+				@include up-to-desktop{
+					background-size: 100% auto;
+				}
+
+				@include up-to-medium{
+					background-size: auto 100%;
+				}
+			}			
+			&.bg-1:before{
+				background-image: url('../img/icons/svg/icon-large-1.svg')
+			}
+			&.bg-2:before{
+				background-image: url('../img/icons/svg/icon-large-2.svg')
+			}
+		}
+
+		.amp{
+			margin-top: 40px;
+		}
+	}
+
+	@include up-to-medium{
+		.medium-2 .gcash-item{
+			display: none;
+		}
+	}
+
+}
